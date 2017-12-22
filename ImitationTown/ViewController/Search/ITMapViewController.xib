@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-CondBold.otf">
+            <string>DINPro-CondBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITMapViewController" customModule="ImitationTown" customModuleProvider="target">
+            <connections>
+                <outlet property="addressNameLabel" destination="SOv-Ww-zPo" id="Wyl-8z-PI3"/>
+                <outlet property="mapNavigationButton" destination="URU-0Y-ova" id="MUE-9N-wxn"/>
+                <outlet property="navBackbutton" destination="rvQ-Pd-moh" id="6Wj-KG-bHa"/>
+                <outlet property="userLocationButton" destination="b5f-8X-TWm" id="9me-Ah-OIe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgK-JH-cQM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vsp-kl-zeg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMm-Yd-D2k" userLabel="CustomNavigationBar">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VENUES OF CODEINVENTOR' CHOICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOv-Ww-zPo" userLabel="AddressName">
+                                        <rect key="frame" x="104" y="13" width="167" height="18"/>
+                                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvQ-Pd-moh" userLabel="navBackbutton">
+                                        <rect key="frame" x="15" y="11" width="16" height="22"/>
+                                        <state key="normal" image="Nav_back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="SOv-Ww-zPo" firstAttribute="centerX" secondItem="gMm-Yd-D2k" secondAttribute="centerX" id="8B6-2a-ahN"/>
+                                    <constraint firstItem="rvQ-Pd-moh" firstAttribute="centerY" secondItem="gMm-Yd-D2k" secondAttribute="centerY" id="NCF-LR-1AK"/>
+                                    <constraint firstItem="SOv-Ww-zPo" firstAttribute="centerY" secondItem="gMm-Yd-D2k" secondAttribute="centerY" id="OyW-jU-sfi"/>
+                                    <constraint firstItem="rvQ-Pd-moh" firstAttribute="leading" secondItem="gMm-Yd-D2k" secondAttribute="leading" constant="15" id="YcC-c5-Ly1"/>
+                                    <constraint firstAttribute="height" constant="44" id="zTc-0R-9c7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gMm-Yd-D2k" secondAttribute="trailing" id="H2a-e3-dBO"/>
+                            <constraint firstItem="gMm-Yd-D2k" firstAttribute="top" secondItem="Vsp-kl-zeg" secondAttribute="top" id="fq3-1N-pbj"/>
+                            <constraint firstItem="gMm-Yd-D2k" firstAttribute="leading" secondItem="Vsp-kl-zeg" secondAttribute="leading" id="q8S-tp-say"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gVW-85-bxV"/>
+                    </constraints>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <button opaque="NO" clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5f-8X-TWm" userLabel="UserLocationButton">
+                    <rect key="frame" x="5" y="622" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.29028764367103577" green="0.28642219305038452" blue="0.27801701426506042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qwp-dn-Z5v"/>
+                        <constraint firstAttribute="width" constant="40" id="veU-46-Blb"/>
+                    </constraints>
+                    <state key="normal" image="current_location"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="currentUserLocation:" destination="-1" eventType="touchUpInside" id="5oO-Ob-KhQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URU-0Y-ova" userLabel="MapNavigationButton">
+                    <rect key="frame" x="190" y="622" width="180" height="40"/>
+                    <color key="backgroundColor" red="0.99672859907150269" green="0.83722549676895142" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="K4E-Vh-Glh"/>
+                        <constraint firstAttribute="height" constant="40" id="iGF-BS-bu0"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="导航" image="map_nav">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="handleMapNavigation:" destination="-1" eventType="touchUpInside" id="6pR-iq-Q9W"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tgK-JH-cQM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Kd-rU-EEe"/>
+                <constraint firstAttribute="bottom" secondItem="b5f-8X-TWm" secondAttribute="bottom" constant="5" id="Atd-m0-DrO"/>
+                <constraint firstAttribute="trailing" secondItem="URU-0Y-ova" secondAttribute="trailing" constant="5" id="Hto-mU-yva"/>
+                <constraint firstAttribute="trailing" secondItem="tgK-JH-cQM" secondAttribute="trailing" id="dM9-j2-NH0"/>
+                <constraint firstItem="b5f-8X-TWm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="nk4-9A-34U"/>
+                <constraint firstAttribute="bottom" secondItem="URU-0Y-ova" secondAttribute="bottom" constant="5" id="snL-84-3fs"/>
+                <constraint firstItem="tgK-JH-cQM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vBv-gs-RCO"/>
+            </constraints>
+            <point key="canvasLocation" x="-17.5" y="29.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Nav_back" width="16" height="16"/>
+        <image name="current_location" width="60" height="60"/>
+        <image name="map_nav" width="20" height="20"/>
+    </resources>
+</document>

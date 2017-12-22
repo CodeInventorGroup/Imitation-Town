@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITSelectCityViewController" customModule="ImitationTown" customModuleProvider="target">
+            <connections>
+                <outlet property="navBackbutton" destination="1rn-dw-hFZ" id="F0g-7H-hT3"/>
+                <outlet property="navView" destination="ukL-Yl-mvI" id="Rua-g4-LEc"/>
+                <outlet property="searchBar" destination="HPO-X0-y0u" id="G9K-gf-gP6"/>
+                <outlet property="view" destination="FfI-qO-cHN" id="Qke-ja-YQn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FfI-qO-cHN">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukL-Yl-mvI" userLabel="导航栏">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rn-dw-hFZ">
+                            <rect key="frame" x="20" y="20" width="16" height="22"/>
+                            <state key="normal" image="Nav_back"/>
+                            <connections>
+                                <action selector="navBack:" destination="-1" eventType="touchUpInside" id="XWm-K4-zpK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVq-xI-172">
+                            <rect key="frame" x="322" y="20" width="33" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="7P9-Nn-mT4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="北京"/>
+                            <connections>
+                                <action selector="selectLocation:" destination="-1" eventType="touchUpInside" id="3Mn-rY-crW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定位城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8u-i8-g7M">
+                            <rect key="frame" x="242" y="20" width="70" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="1gC-Qp-vcI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.9423784278927545" blue="0.26022307261206334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <searchBar contentMode="redraw" placeholder="搜索城市名称" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPO-X0-y0u">
+                            <rect key="frame" x="20" y="70" width="335" height="30"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.87450980389999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="WOW-Jz-irZ"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="mQW-ue-SCC"/>
+                            </constraints>
+                            <color key="barTintColor" red="0.98039215690000003" green="0.87450980389999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="searchTextPositionAdjustment" horizontal="-6" vertical="0.0"/>
+                            <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="-6" vertical="0.0"/>
+                            <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                        </searchBar>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="1rn-dw-hFZ" firstAttribute="top" secondItem="ukL-Yl-mvI" secondAttribute="top" constant="20" id="25R-Xp-2eU"/>
+                        <constraint firstItem="SVq-xI-172" firstAttribute="top" secondItem="ukL-Yl-mvI" secondAttribute="top" constant="20" id="3ol-qs-8K2"/>
+                        <constraint firstItem="HPO-X0-y0u" firstAttribute="leading" secondItem="ukL-Yl-mvI" secondAttribute="leading" constant="20" id="Gis-u5-dbB"/>
+                        <constraint firstAttribute="height" constant="100" id="RcY-hW-RnI"/>
+                        <constraint firstAttribute="trailing" secondItem="HPO-X0-y0u" secondAttribute="trailing" constant="20" id="ZuK-lk-1Nz"/>
+                        <constraint firstItem="1rn-dw-hFZ" firstAttribute="leading" secondItem="ukL-Yl-mvI" secondAttribute="leading" constant="20" id="ck2-qN-4ae"/>
+                        <constraint firstItem="g8u-i8-g7M" firstAttribute="centerY" secondItem="SVq-xI-172" secondAttribute="centerY" id="dnH-0B-9yu"/>
+                        <constraint firstAttribute="bottom" secondItem="HPO-X0-y0u" secondAttribute="bottom" id="kvZ-38-7cr"/>
+                        <constraint firstAttribute="trailing" secondItem="SVq-xI-172" secondAttribute="trailing" constant="20" id="sXN-yR-Sfh"/>
+                        <constraint firstItem="SVq-xI-172" firstAttribute="leading" secondItem="g8u-i8-g7M" secondAttribute="trailing" constant="10" id="zpM-zt-rwc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ukL-Yl-mvI" firstAttribute="top" secondItem="FfI-qO-cHN" secondAttribute="top" id="bzi-HZ-yND"/>
+                <constraint firstItem="ukL-Yl-mvI" firstAttribute="leading" secondItem="FfI-qO-cHN" secondAttribute="leading" id="gdV-Qg-AzW"/>
+                <constraint firstAttribute="trailing" secondItem="ukL-Yl-mvI" secondAttribute="trailing" id="r7W-GS-O1c"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Nav_back" width="16" height="16"/>
+    </resources>
+</document>

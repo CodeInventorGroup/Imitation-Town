@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3wi-jf-FP1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation View Controller-->
+        <scene sceneID="Yh0-12-eiv">
+            <objects>
+                <navigationController id="3wi-jf-FP1" customClass="ITNavigationViewController" customModule="ImitationTown" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w2Y-N6-36u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dfg-HI-zZ9" kind="relationship" relationship="rootViewController" id="9hD-oj-vbj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqL-m2-jhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="242"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="rfS-Ug-Oq0">
+            <objects>
+                <viewController id="dfg-HI-zZ9" customClass="ITPageViewController" customModule="ImitationTown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGQ-k6-554"/>
+                        <viewControllerLayoutGuide type="bottom" id="etO-Sj-Q6V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g7f-a7-mMN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Slp-LC-pwR">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <connections>
+                                    <segue destination="7II-pc-QgC" kind="embed" id="kG7-Wy-tTv"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Slp-LC-pwR" secondAttribute="trailing" id="43u-Ug-9qJ"/>
+                            <constraint firstItem="Slp-LC-pwR" firstAttribute="top" secondItem="WGQ-k6-554" secondAttribute="bottom" constant="50" id="5rK-PQ-gd4"/>
+                            <constraint firstItem="etO-Sj-Q6V" firstAttribute="top" secondItem="Slp-LC-pwR" secondAttribute="bottom" id="ImP-wU-uDg"/>
+                            <constraint firstItem="Slp-LC-pwR" firstAttribute="leading" secondItem="g7f-a7-mMN" secondAttribute="leading" id="KgY-aB-dyf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jrY-YR-BZT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwc-qB-RwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="243"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="MeI-me-0S1">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7II-pc-QgC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ju-Mu-F24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="242"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-CondBold.otf">
+            <string>DINPro-CondBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ITHomeCityStoryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ITHomeCityStoryCell" rowHeight="365" id="KGk-i7-Jjw" customClass="ITHomeCityStoryCell" customModule="ImitationTown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="592" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="592" height="315"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kZa-gz-Ge1">
+                        <rect key="frame" x="2" y="2" width="588" height="311"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O73-Xe-v1i">
+                        <rect key="frame" x="12" y="269" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="HgD-hz-5Ub"/>
+                            <constraint firstAttribute="width" constant="34" id="qaN-2q-oyb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIc-Ga-uC5">
+                        <rect key="frame" x="55" y="276" width="61" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9ws-q8-mEv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="14"/>
+                        <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X94-0U-6H5">
+                        <rect key="frame" x="17" y="264" width="24" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gaF-ky-QuL"/>
+                            <constraint firstAttribute="width" constant="24" id="oFz-1U-U6K"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahX-ES-YXJ">
+                        <rect key="frame" x="55" y="254" width="520" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="VyI-3F-Gms"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="12"/>
+                        <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1r-bE-DFD">
+                        <rect key="frame" x="55" y="231" width="525" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eS0-Pa-Qdu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="12"/>
+                        <color key="textColor" red="0.99607843139999996" green="0.81568627449999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u2-hL-uVU">
+                        <rect key="frame" x="55" y="212" width="36" height="16"/>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-VA-RKs">
+                        <rect key="frame" x="554" y="287" width="26" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="LpJ-85-TWh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="4" image="Home_like"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3K-lZ-naW">
+                        <rect key="frame" x="511" y="287" width="31" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="yS7-AG-F7R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="-21" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="10" image="Home_look"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ahX-ES-YXJ" firstAttribute="centerY" secondItem="X94-0U-6H5" secondAttribute="centerY" id="0O7-Ja-57S"/>
+                    <constraint firstItem="L3K-lZ-naW" firstAttribute="centerY" secondItem="Ob0-VA-RKs" secondAttribute="centerY" id="8sR-es-UME"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ob0-VA-RKs" secondAttribute="bottom" constant="4" id="A4t-ge-QIa"/>
+                    <constraint firstItem="EIc-Ga-uC5" firstAttribute="centerY" secondItem="O73-Xe-v1i" secondAttribute="centerY" id="AgQ-9h-trH"/>
+                    <constraint firstItem="O73-Xe-v1i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="Bhl-GT-BHY"/>
+                    <constraint firstAttribute="bottom" secondItem="kZa-gz-Ge1" secondAttribute="bottom" constant="2" id="Q3n-5x-o08"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="O73-Xe-v1i" secondAttribute="bottom" constant="4" id="S0T-RW-sxG"/>
+                    <constraint firstItem="O73-Xe-v1i" firstAttribute="top" secondItem="X94-0U-6H5" secondAttribute="bottom" constant="4" id="U2f-z2-FsQ"/>
+                    <constraint firstItem="6u2-hL-uVU" firstAttribute="leading" secondItem="S1r-bE-DFD" secondAttribute="leading" id="U8E-OG-gUK"/>
+                    <constraint firstAttribute="trailing" secondItem="kZa-gz-Ge1" secondAttribute="trailing" constant="2" id="VaG-SN-XVn"/>
+                    <constraint firstItem="kZa-gz-Ge1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="WfY-EU-iGm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ob0-VA-RKs" secondAttribute="trailing" constant="4" id="YmH-ag-HoB"/>
+                    <constraint firstItem="ahX-ES-YXJ" firstAttribute="top" secondItem="S1r-bE-DFD" secondAttribute="bottom" constant="3" id="Zcg-u1-3qm"/>
+                    <constraint firstItem="EIc-Ga-uC5" firstAttribute="leading" secondItem="O73-Xe-v1i" secondAttribute="trailing" constant="9" id="g8a-Ro-GVt"/>
+                    <constraint firstItem="L3K-lZ-naW" firstAttribute="height" secondItem="Ob0-VA-RKs" secondAttribute="height" id="iYX-Oa-aV1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ahX-ES-YXJ" secondAttribute="trailing" constant="9" id="kW8-0l-6bp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="S1r-bE-DFD" secondAttribute="trailing" constant="4" id="lQA-35-OMS"/>
+                    <constraint firstItem="Ob0-VA-RKs" firstAttribute="leading" secondItem="L3K-lZ-naW" secondAttribute="trailing" constant="12" id="myB-cn-EQ1"/>
+                    <constraint firstItem="ahX-ES-YXJ" firstAttribute="leading" secondItem="EIc-Ga-uC5" secondAttribute="leading" id="p0D-nO-bad"/>
+                    <constraint firstItem="S1r-bE-DFD" firstAttribute="top" secondItem="6u2-hL-uVU" secondAttribute="bottom" constant="3" id="sux-cw-IjV"/>
+                    <constraint firstItem="S1r-bE-DFD" firstAttribute="leading" secondItem="ahX-ES-YXJ" secondAttribute="leading" id="x2I-wW-teb"/>
+                    <constraint firstItem="X94-0U-6H5" firstAttribute="centerX" secondItem="O73-Xe-v1i" secondAttribute="centerX" id="xQp-6s-wuR"/>
+                    <constraint firstItem="kZa-gz-Ge1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="xzf-qw-kRs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="addressLabel" destination="S1r-bE-DFD" id="Psv-8Z-DNP"/>
+                <outlet property="authorImgView" destination="O73-Xe-v1i" id="wjM-pr-XSR"/>
+                <outlet property="authorNameLabel" destination="EIc-Ga-uC5" id="oRO-c6-8Pl"/>
+                <outlet property="commentCountButton" destination="L3K-lZ-naW" id="cST-uj-ves"/>
+                <outlet property="createTimeLabel" destination="6u2-hL-uVU" id="UML-Dh-KBB"/>
+                <outlet property="imageTagLabel" destination="ahX-ES-YXJ" id="BKo-GK-ZVz"/>
+                <outlet property="likeCountButton" destination="Ob0-VA-RKs" id="Kh0-gL-Rk8"/>
+                <outlet property="venueImgView" destination="kZa-gz-Ge1" id="nyi-hi-5pu"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="146"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Home_like" width="21" height="21"/>
+        <image name="Home_look" width="21" height="21"/>
+    </resources>
+</document>

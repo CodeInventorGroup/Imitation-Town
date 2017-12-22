@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-CondBold.otf">
+            <string>DINPro-CondBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITCategoryTableViewCell" customModule="ImitationTown" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ITCategoryTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="ITCategoryTableViewCell" rowHeight="194" id="qcF-O1-0GN" userLabel="ITCategoryTableViewCell" customClass="ITCategoryTableViewCell" customModule="ImitationTown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qcF-O1-0GN" id="ZmZ-cZ-Vvm">
+                <rect key="frame" x="0.0" y="0.0" width="437" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tlQ-BD-Kvb">
+                        <rect key="frame" x="2" y="2" width="433" height="221.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TL9-uY-jHB" userLabel="左侧白色分割线">
+                        <rect key="frame" x="15" y="202.5" width="20" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="fgW-B2-Yei"/>
+                            <constraint firstAttribute="height" constant="1" id="vO5-Ht-JFY"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设计空间很小，专业精品咖啡的理想很大" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkw-2A-JrH">
+                        <rect key="frame" x="58" y="196.5" width="341" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="B2U-5C-ddz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-9b-OMF">
+                        <rect key="frame" x="15" y="168.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="C5t-LG-MY9"/>
+                            <constraint firstAttribute="height" constant="20" id="iPn-1z-5D1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大小咖啡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XF-CJ-139">
+                        <rect key="frame" x="58" y="168.5" width="66" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIGSMALL COFFEE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0e-19-meH">
+                        <rect key="frame" x="58" y="142.5" width="73.5" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="24U-Tu-gPY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZR-7w-29P">
+                        <rect key="frame" x="58" y="116.5" width="25" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="lFT-Wg-efU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="B0e-19-meH" firstAttribute="top" secondItem="GZR-7w-29P" secondAttribute="bottom" constant="14" id="5DP-Bb-GzZ"/>
+                    <constraint firstItem="NU0-9b-OMF" firstAttribute="centerX" secondItem="TL9-uY-jHB" secondAttribute="centerX" id="JTN-lJ-rLK"/>
+                    <constraint firstItem="6XF-CJ-139" firstAttribute="centerY" secondItem="NU0-9b-OMF" secondAttribute="centerY" id="R6X-mH-QhQ"/>
+                    <constraint firstItem="xkw-2A-JrH" firstAttribute="centerY" secondItem="TL9-uY-jHB" secondAttribute="centerY" id="RIL-jv-Upe"/>
+                    <constraint firstItem="TL9-uY-jHB" firstAttribute="leading" secondItem="ZmZ-cZ-Vvm" secondAttribute="leading" constant="15" id="ZZM-XA-zky"/>
+                    <constraint firstItem="tlQ-BD-Kvb" firstAttribute="top" secondItem="ZmZ-cZ-Vvm" secondAttribute="top" constant="2" id="eDZ-L8-s2m"/>
+                    <constraint firstAttribute="trailing" secondItem="tlQ-BD-Kvb" secondAttribute="trailing" constant="2" id="hhv-ys-idZ"/>
+                    <constraint firstItem="GZR-7w-29P" firstAttribute="leading" secondItem="xkw-2A-JrH" secondAttribute="leading" id="iki-JB-YCl"/>
+                    <constraint firstItem="tlQ-BD-Kvb" firstAttribute="leading" secondItem="ZmZ-cZ-Vvm" secondAttribute="leading" constant="2" id="k3e-au-OdV"/>
+                    <constraint firstItem="6XF-CJ-139" firstAttribute="leading" secondItem="xkw-2A-JrH" secondAttribute="leading" id="knI-Yz-x4g"/>
+                    <constraint firstItem="6XF-CJ-139" firstAttribute="top" secondItem="B0e-19-meH" secondAttribute="bottom" constant="14" id="nEl-u7-X8i"/>
+                    <constraint firstItem="xkw-2A-JrH" firstAttribute="leading" secondItem="ZmZ-cZ-Vvm" secondAttribute="leadingMargin" constant="50" id="oiT-NA-XAx"/>
+                    <constraint firstItem="TL9-uY-jHB" firstAttribute="top" secondItem="NU0-9b-OMF" secondAttribute="bottom" constant="14" id="ovC-rS-TMU"/>
+                    <constraint firstAttribute="bottom" secondItem="tlQ-BD-Kvb" secondAttribute="bottom" constant="2" id="tSD-bJ-yAA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xkw-2A-JrH" secondAttribute="trailing" constant="30" id="vA3-Pw-WrR"/>
+                    <constraint firstAttribute="bottom" secondItem="TL9-uY-jHB" secondAttribute="bottom" constant="22" id="wGf-HH-gom"/>
+                    <constraint firstItem="B0e-19-meH" firstAttribute="leading" secondItem="xkw-2A-JrH" secondAttribute="leading" id="yHX-Q0-4RM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImgView" destination="tlQ-BD-Kvb" id="NV1-Vw-gVF"/>
+                <outlet property="descLabel" destination="xkw-2A-JrH" id="V0Y-VP-f7u"/>
+                <outlet property="englishLabel" destination="B0e-19-meH" id="Zup-5R-ahq"/>
+                <outlet property="locationLabel" destination="GZR-7w-29P" id="FUq-kT-JOy"/>
+                <outlet property="titleLabel" destination="6XF-CJ-139" id="JiV-7T-gef"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="617"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="coffee" width="16" height="16"/>
+    </resources>
+</document>

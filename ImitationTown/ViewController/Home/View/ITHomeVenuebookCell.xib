@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-CondBold.otf">
+            <string>DINPro-CondBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ITHomeVenuebookCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="ITHomeVenuebookCell" rowHeight="170" id="KGk-i7-Jjw" customClass="ITHomeVenuebookCell" customModule="ImitationTown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRs-FV-M0K">
+                        <rect key="frame" x="3" y="3" width="331" height="130"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6z-YF-6lG">
+                        <rect key="frame" x="3" y="83" width="331" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvZ-vb-nwe" customClass="UIImageView">
+                                <rect key="frame" x="9" y="8" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Kb4-iv-ora"/>
+                                    <constraint firstAttribute="height" constant="34" id="ZEr-Zc-iS4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eon-qR-h8L">
+                                <rect key="frame" x="49" y="15" width="273" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="bIZ-yh-ApS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qvZ-vb-nwe" firstAttribute="leading" secondItem="U6z-YF-6lG" secondAttribute="leading" constant="9" id="7Wr-8F-QKF"/>
+                            <constraint firstAttribute="height" constant="50" id="PG2-1y-Rwm"/>
+                            <constraint firstAttribute="trailing" secondItem="Eon-qR-h8L" secondAttribute="trailing" constant="9" id="Ro0-WR-NHj"/>
+                            <constraint firstItem="Eon-qR-h8L" firstAttribute="centerY" secondItem="U6z-YF-6lG" secondAttribute="centerY" constant="0.5" id="exn-05-yH9"/>
+                            <constraint firstItem="qvZ-vb-nwe" firstAttribute="centerY" secondItem="U6z-YF-6lG" secondAttribute="centerY" constant="0.5" id="gBP-Ds-vdU"/>
+                            <constraint firstItem="Eon-qR-h8L" firstAttribute="leading" secondItem="qvZ-vb-nwe" secondAttribute="trailing" constant="6" id="y1o-KD-QYl"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Tag" translatesAutoresizingMaskIntoConstraints="NO" id="fvF-Tl-FeE">
+                        <rect key="frame" x="306" y="15" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="QJG-gQ-OEZ"/>
+                            <constraint firstAttribute="width" constant="16" id="aup-fW-sNr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VenueNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZ3-Li-LYZ">
+                        <rect key="frame" x="234" y="17" width="66" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="v40-O7-ux8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="U6z-YF-6lG" secondAttribute="trailing" constant="3" id="9QT-vy-Uac"/>
+                    <constraint firstAttribute="bottom" secondItem="gRs-FV-M0K" secondAttribute="bottom" constant="3" id="G2g-8J-Qgy"/>
+                    <constraint firstItem="fvF-Tl-FeE" firstAttribute="leading" secondItem="dZ3-Li-LYZ" secondAttribute="trailing" constant="6" id="GYL-Ut-275"/>
+                    <constraint firstItem="dZ3-Li-LYZ" firstAttribute="centerY" secondItem="fvF-Tl-FeE" secondAttribute="centerY" id="IUz-sW-SS3"/>
+                    <constraint firstAttribute="trailing" secondItem="fvF-Tl-FeE" secondAttribute="trailing" constant="15" id="Ik2-B9-721"/>
+                    <constraint firstAttribute="trailing" secondItem="gRs-FV-M0K" secondAttribute="trailing" constant="3" id="WKc-5n-nbo"/>
+                    <constraint firstItem="gRs-FV-M0K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="oTa-PK-yCG"/>
+                    <constraint firstItem="fvF-Tl-FeE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="oaN-A9-xGS"/>
+                    <constraint firstAttribute="bottom" secondItem="U6z-YF-6lG" secondAttribute="bottom" constant="3" id="pYp-hs-6Mm"/>
+                    <constraint firstItem="U6z-YF-6lG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="u6H-tv-Pwj"/>
+                    <constraint firstItem="gRs-FV-M0K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="y5A-go-fOh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="backgroundImgView" destination="gRs-FV-M0K" id="gv1-3z-IT6"/>
+                <outlet property="tagView" destination="fvF-Tl-FeE" id="1UN-De-KSr"/>
+                <outlet property="userAvatarImgView" destination="qvZ-vb-nwe" id="nnk-pT-LgZ"/>
+                <outlet property="venueNumLabel" destination="dZ3-Li-LYZ" id="76F-fJ-eg8"/>
+                <outlet property="venuebookNameLabel" destination="Eon-qR-h8L" id="iLi-2B-sgh"/>
+            </connections>
+            <point key="canvasLocation" x="-40.5" y="5.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Home_Tag" width="24" height="24"/>
+    </resources>
+</document>

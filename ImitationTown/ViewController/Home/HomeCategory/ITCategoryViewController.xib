@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-CondBold.otf">
+            <string>DINPro-CondBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITCategoryViewController" customModule="ImitationTown" customModuleProvider="target">
+            <connections>
+                <outlet property="navBackbutton" destination="C8D-wX-ZEC" id="y4r-6M-0Q3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R1-ed-AAZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0hb-1D-Dtd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwG-F7-nnJ" userLabel="导航栏">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VENUES OF CODEINVENTOR' CHOICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-yI-dWr">
+                                        <rect key="frame" x="104.5" y="17.5" width="167" height="18"/>
+                                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8D-wX-ZEC">
+                                        <rect key="frame" x="15" y="15" width="21" height="22"/>
+                                        <state key="normal" image="Nav_back"/>
+                                        <connections>
+                                            <action selector="backNav:" destination="-1" eventType="touchUpInside" id="hCh-aL-lb1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij6-fC-jbb">
+                                        <rect key="frame" x="336" y="15" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="ZqK-BK-M5X"/>
+                                            <constraint firstAttribute="width" constant="24" id="eAd-YE-LhY"/>
+                                        </constraints>
+                                        <state key="normal" image="Map"/>
+                                        <connections>
+                                            <action selector="lookVenueAtMap:" destination="-1" eventType="touchUpInside" id="1KK-eq-PXj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zR-6J-RYV">
+                                        <rect key="frame" x="15" y="52" width="73" height="18"/>
+                                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="12" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="-11" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="49" minY="0.0" maxX="-50" maxY="0.0"/>
+                                        <state key="normal" title="CATEGORY" image="arrow_below">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectCategory:" destination="-1" eventType="touchUpInside" id="SDc-d1-Knb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvs-sp-IMX">
+                                        <rect key="frame" x="317" y="52" width="43" height="18"/>
+                                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="7" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="SORT" image="arrow_below">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="venueSort:" destination="-1" eventType="touchUpInside" id="B6L-nz-bDb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BJc-yI-dWr" firstAttribute="centerY" secondItem="C8D-wX-ZEC" secondAttribute="centerY" id="0SN-7e-6BW"/>
+                                    <constraint firstItem="BJc-yI-dWr" firstAttribute="centerX" secondItem="OwG-F7-nnJ" secondAttribute="centerX" constant="0.5" id="Ee7-Pt-yj3"/>
+                                    <constraint firstAttribute="height" constant="80" id="MRn-6x-Czc"/>
+                                    <constraint firstItem="2zR-6J-RYV" firstAttribute="leading" secondItem="OwG-F7-nnJ" secondAttribute="leading" constant="15" id="Mc7-ds-fge"/>
+                                    <constraint firstItem="C8D-wX-ZEC" firstAttribute="leading" secondItem="OwG-F7-nnJ" secondAttribute="leading" constant="15" id="PMD-YB-jIi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zvs-sp-IMX" secondAttribute="trailing" constant="15" id="PzG-yO-R5W"/>
+                                    <constraint firstItem="C8D-wX-ZEC" firstAttribute="top" secondItem="OwG-F7-nnJ" secondAttribute="top" constant="15" id="Qy4-kd-ANx"/>
+                                    <constraint firstAttribute="bottom" secondItem="2zR-6J-RYV" secondAttribute="bottom" constant="10" id="a8j-ng-NOQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ij6-fC-jbb" secondAttribute="trailing" constant="15" id="gwu-vz-gbN"/>
+                                    <constraint firstItem="Ij6-fC-jbb" firstAttribute="top" secondItem="OwG-F7-nnJ" secondAttribute="top" constant="15" id="v1Z-xn-4WY"/>
+                                    <constraint firstItem="Zvs-sp-IMX" firstAttribute="centerY" secondItem="2zR-6J-RYV" secondAttribute="centerY" id="ydC-So-v2y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OwG-F7-nnJ" firstAttribute="leading" secondItem="0hb-1D-Dtd" secondAttribute="leading" id="4wD-EW-TPm"/>
+                            <constraint firstItem="OwG-F7-nnJ" firstAttribute="top" secondItem="0hb-1D-Dtd" secondAttribute="top" id="kdB-cm-UV5"/>
+                            <constraint firstAttribute="trailing" secondItem="OwG-F7-nnJ" secondAttribute="trailing" id="yAA-Ed-tmm"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="lJi-oI-tmO"/>
+                    </constraints>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2R1-ed-AAZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M9G-gy-BSR"/>
+                <constraint firstItem="2R1-ed-AAZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h4L-bu-dUT"/>
+                <constraint firstAttribute="trailing" secondItem="2R1-ed-AAZ" secondAttribute="trailing" id="nA5-uC-tX7"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Map" width="32" height="32"/>
+        <image name="Nav_back" width="21" height="21"/>
+        <image name="arrow_below" width="8" height="8"/>
+    </resources>
+</document>

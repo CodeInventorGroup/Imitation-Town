@@ -1,0 +1,109 @@
+{
+    "code": 0,
+    "result": {
+        "categories": [{
+                       "code": "coffee",
+                       "title": "咖啡",
+                       "icons": {
+                       "blue": "assets/venue-category/coffee/blue-150x150.png",
+                       "white": "assets/venue-category/coffee/white-150x150.png"
+                       }
+                       }, {
+                       "code": "food",
+                       "title": "美食",
+                       "icons": {
+                       "blue": "assets/venue-category/food/blue-150x150.png",
+                       "white": "assets/venue-category/food/white-150x150.png"
+                       }
+                       }, {
+                       "code": "culture",
+                       "title": "文化艺术",
+                       "icons": {
+                       "blue": "assets/venue-category/culture/blue-150x150.png",
+                       "white": "assets/venue-category/culture/white-150x150.png"
+                       }
+                       }, {
+                       "code": "entertainment",
+                       "title": "休闲娱乐",
+                       "icons": {
+                       "blue": "assets/venue-category/entertainment/blue-150x150.png",
+                       "white": "assets/venue-category/entertainment/white-150x150.png"
+                       }
+                       }, {
+                       "code": "shopping",
+                       "title": "购物",
+                       "icons": {
+                       "blue": "assets/venue-category/shopping/blue-150x150.png",
+                       "white": "assets/venue-category/shopping/white-150x150.png"
+                       }
+                       }, {
+                       "code": "history",
+                       "title": "文化遗产",
+                       "icons": {
+                       "blue": "assets/venue-category/history/blue-150x150.png",
+                       "white": "assets/venue-category/history/white-150x150.png"
+                       }
+                       }, {
+                       "code": "residence",
+                       "title": "住宿",
+                       "icons": {
+                       "blue": "assets/venue-category/residence/blue-150x150.png",
+                       "white": "assets/venue-category/residence/white-150x150.png"
+                       }
+                       }, {
+                       "code": "service",
+                       "title": "服务",
+                       "icons": {
+                       "blue": "assets/venue-category/service/blue-150x150.png",
+                       "white": "assets/venue-category/service/white-150x150.png"
+                       }
+                       }, {
+                       "code": "outdoors",
+                       "title": "户外",
+                       "icons": {
+                       "blue": "assets/venue-category/outdoors/blue-150x150.png",
+                       "white": "assets/venue-category/outdoors/white-150x150.png"
+                       }
+                       }, {
+                       "code": "skills",
+                       "title": "技能学习",
+                       "icons": {
+                       "blue": "assets/venue-category/skills/blue-150x150.png",
+                       "white": "assets/venue-category/skills/white-150x150.png"
+                       }
+                       }, {
+                       "code": "sports",
+                       "title": "运动健身",
+                       "icons": {
+                       "blue": "assets/venue-category/sports/blue-150x150.png",
+                       "white": "assets/venue-category/sports/white-150x150.png"
+                       }
+                       }, {
+                       "code": "subculture",
+                       "title": "亚文化",
+                       "icons": {
+                       "blue": "assets/venue-category/subculture/blue-150x150.png",
+                       "white": "assets/venue-category/subculture/white-150x150.png"
+                       }
+                       }],
+        "region": {
+            "id": "3",
+            "code": "PEK",
+            "name": "北京",
+            "isAbroad": false,
+            "priority": 4372,
+            "longitude": 116.454953,
+            "latitude": 39.936783,
+            "countryCode": "CN",
+            "countryName": "中国",
+            "continentCode": "Asia",
+            "timezone": "Asia/Shanghai",
+            "rawOffset": 8,
+            "geoSrc": ""
+        },
+        "hasInspiredVenue": true,
+        "hasVenuebook": true,
+        "hasFabula": true,
+        "hasLikedVenue": false
+    }
+}

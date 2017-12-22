@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ITMessageTableViewCell" id="KGk-i7-Jjw" customClass="ITMessageTableViewCell" customModule="ImitationTown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="529" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="529" height="191.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <visualEffectView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeU-Ju-BVg">
+                        <rect key="frame" x="3" y="3" width="523" height="185.5"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sND-8y-dog">
+                            <rect key="frame" x="0.0" y="0.0" width="523" height="185.5"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hm8-NA-skM">
+                                    <rect key="frame" x="4" y="4" width="64" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="RvS-oa-eBx"/>
+                                        <constraint firstAttribute="width" constant="64" id="gNU-xZ-du8"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xt-3P-bWS">
+                                    <rect key="frame" x="4" y="98" width="504" height="85.5"/>
+                                    <string key="text">ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ManoBoo是一个iOS开源爱好者ManoBoo是一个iOS开源爱好者ManoBoo是一个iOS开源爱好者" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQs-qj-VDa">
+                                    <rect key="frame" x="83" y="4" width="425" height="64"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="5Xt-3P-bWS" secondAttribute="bottom" constant="2" id="785-O9-9t9"/>
+                                <constraint firstItem="EQs-qj-VDa" firstAttribute="centerY" secondItem="hm8-NA-skM" secondAttribute="centerY" id="Mmr-Ku-V9t"/>
+                                <constraint firstItem="EQs-qj-VDa" firstAttribute="leading" secondItem="hm8-NA-skM" secondAttribute="trailing" constant="15" id="RPc-Et-nUJ"/>
+                                <constraint firstAttribute="trailing" secondItem="EQs-qj-VDa" secondAttribute="trailing" constant="15" id="TuU-mO-HVw"/>
+                                <constraint firstItem="5Xt-3P-bWS" firstAttribute="leading" secondItem="hm8-NA-skM" secondAttribute="leading" id="cnb-fW-nDS"/>
+                                <constraint firstAttribute="trailing" secondItem="EQs-qj-VDa" secondAttribute="trailing" constant="15" id="eJa-tb-ekG"/>
+                                <constraint firstItem="5Xt-3P-bWS" firstAttribute="top" secondItem="hm8-NA-skM" secondAttribute="bottom" constant="30" id="hAn-30-PQx"/>
+                                <constraint firstItem="EQs-qj-VDa" firstAttribute="top" secondItem="hm8-NA-skM" secondAttribute="top" id="iX1-4l-Ghs"/>
+                                <constraint firstItem="hm8-NA-skM" firstAttribute="leading" secondItem="sND-8y-dog" secondAttribute="leading" constant="4" id="vMz-cp-fM1"/>
+                                <constraint firstItem="hm8-NA-skM" firstAttribute="top" secondItem="sND-8y-dog" secondAttribute="top" constant="4" id="vl3-lL-IQF"/>
+                                <constraint firstItem="5Xt-3P-bWS" firstAttribute="trailing" secondItem="EQs-qj-VDa" secondAttribute="trailing" id="voD-T1-d15"/>
+                            </constraints>
+                        </view>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <blurEffect style="extraLight"/>
+                    </visualEffectView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="aeU-Ju-BVg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="1gI-kL-1ii"/>
+                    <constraint firstAttribute="bottom" secondItem="aeU-Ju-BVg" secondAttribute="bottom" constant="3" id="2bz-ob-o7q"/>
+                    <constraint firstItem="aeU-Ju-BVg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="e17-C5-4Pu"/>
+                    <constraint firstAttribute="trailing" secondItem="aeU-Ju-BVg" secondAttribute="trailing" constant="3" id="gpl-Q5-807"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="introductionLabel" destination="EQs-qj-VDa" id="KxW-UD-yLH"/>
+                <outlet property="messageLabel" destination="5Xt-3P-bWS" id="viX-Ag-Hq6"/>
+                <outlet property="userAvatarImgView" destination="hm8-NA-skM" id="jyn-Uv-GJx"/>
+            </connections>
+            <point key="canvasLocation" x="-278" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>

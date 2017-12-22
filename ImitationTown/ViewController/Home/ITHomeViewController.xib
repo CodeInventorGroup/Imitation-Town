@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITHomeViewController" customModule="ImitationTown" customModuleProvider="target">
+            <connections>
+                <outlet property="locationBtn" destination="nw1-Ur-Q6d" id="YcK-De-agK"/>
+                <outlet property="nearbyBtn" destination="e3A-Bn-xJH" id="irf-3y-80a"/>
+                <outlet property="searchBar" destination="9az-7T-ora" id="usc-dv-F74"/>
+                <outlet property="view" destination="iN0-l3-epB" id="xSM-aT-JrM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6O-2v-cPf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nw1-Ur-Q6d">
+                            <rect key="frame" x="10" y="8" width="63" height="30"/>
+                            <color key="backgroundColor" red="0.99607843137254903" green="0.81568627450980391" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="63" id="CgD-ij-Prp"/>
+                                <constraint firstAttribute="height" constant="30" id="myl-l7-gq8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="北京" image="arrow_below">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="changeLocalCity:" destination="-1" eventType="touchUpInside" id="2RE-uT-Fez"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3A-Bn-xJH">
+                            <rect key="frame" x="264" y="7" width="46" height="30"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.87450980389999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="fXt-Nc-f8f"/>
+                                <constraint firstAttribute="height" constant="30" id="uF2-Bg-SQ4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="附近"/>
+                        </button>
+                        <searchBar contentMode="redraw" placeholder="搜索地点、地点集" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9az-7T-ora">
+                            <rect key="frame" x="73" y="8" width="183" height="30"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.87450980389999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="frc-fI-6hN"/>
+                            </constraints>
+                            <color key="barTintColor" red="0.98039215686274506" green="0.87450980392156863" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="searchTextPositionAdjustment" horizontal="-6" vertical="0.0"/>
+                            <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="-6" vertical="0.0"/>
+                            <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5dd-jQ-4s3"/>
+                        <constraint firstItem="nw1-Ur-Q6d" firstAttribute="centerY" secondItem="g6O-2v-cPf" secondAttribute="centerY" constant="0.5" id="CuY-mm-KgW"/>
+                        <constraint firstItem="nw1-Ur-Q6d" firstAttribute="leading" secondItem="g6O-2v-cPf" secondAttribute="leading" constant="10" id="Gii-SN-7vy"/>
+                        <constraint firstItem="9az-7T-ora" firstAttribute="centerY" secondItem="g6O-2v-cPf" secondAttribute="centerY" constant="0.5" id="b6o-tp-upq"/>
+                        <constraint firstAttribute="trailing" secondItem="e3A-Bn-xJH" secondAttribute="trailing" constant="10" id="glm-TB-gfJ"/>
+                        <constraint firstItem="e3A-Bn-xJH" firstAttribute="centerY" secondItem="g6O-2v-cPf" secondAttribute="centerY" constant="0.5" id="lzK-h6-Q0i"/>
+                        <constraint firstItem="e3A-Bn-xJH" firstAttribute="leading" secondItem="9az-7T-ora" secondAttribute="trailing" constant="8" id="rkW-Iv-3Dy"/>
+                        <constraint firstItem="9az-7T-ora" firstAttribute="leading" secondItem="nw1-Ur-Q6d" secondAttribute="trailing" id="t1V-xe-Fa2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="g6O-2v-cPf" secondAttribute="trailing" id="Azq-Xm-LAw"/>
+                <constraint firstItem="g6O-2v-cPf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i7R-kV-tvE"/>
+                <constraint firstItem="g6O-2v-cPf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lgc-Ub-Oqd"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_below" width="8" height="8"/>
+    </resources>
+</document>

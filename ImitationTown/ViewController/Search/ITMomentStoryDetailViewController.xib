@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITMomentStoryDetailViewController" customModule="ImitationTown" customModuleProvider="target">
+            <connections>
+                <outlet property="homeButton" destination="GLQ-dW-uaJ" id="0aX-qp-KMp"/>
+                <outlet property="moreButton" destination="dRF-ke-Jh4" id="373-mT-zMa"/>
+                <outlet property="navBackButton" destination="aaB-wf-A0p" id="rql-rQ-eg9"/>
+                <outlet property="rotateButton" destination="Zkp-mn-L83" id="eUY-4D-6Ed"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oja-T5-DUT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" id="Uv0-Mz-2fV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaB-wf-A0p" userLabel="NavBackButton">
+                                <rect key="frame" x="5" y="4" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="y9f-H6-gbS"/>
+                                    <constraint firstAttribute="height" constant="40" id="zFe-tD-0aE"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="nav_back_white"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLQ-dW-uaJ" userLabel="HomeButton">
+                                <rect key="frame" x="45" y="4" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.39995324611663818" green="0.40002685785293579" blue="0.39994865655899048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="T8B-uC-QDV"/>
+                                    <constraint firstAttribute="height" constant="40" id="cnb-re-M02"/>
+                                </constraints>
+                                <state key="normal" image="home_white"/>
+                                <connections>
+                                    <action selector="handleGoHomeAction:" destination="-1" eventType="touchUpInside" id="9IY-Bh-dNM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-ke-Jh4" userLabel="MoreButton">
+                                <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="b0A-u5-sJe"/>
+                                    <constraint firstAttribute="height" constant="50" id="kz7-fY-gLG"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="more_action"/>
+                                <connections>
+                                    <action selector="handleShowMoreAction:" destination="-1" eventType="touchUpInside" id="duT-DO-aps"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkp-mn-L83" userLabel="RotateButton">
+                                <rect key="frame" x="275" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZQU-0o-sKX"/>
+                                    <constraint firstAttribute="width" constant="50" id="gtu-S1-j5y"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="rotate_to_horizontal.shadow"/>
+                                <connections>
+                                    <action selector="handleRotateAction:" destination="-1" eventType="touchUpInside" id="AMh-xi-BUE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Zkp-mn-L83" firstAttribute="top" secondItem="Uv0-Mz-2fV" secondAttribute="top" id="2CD-gI-Piu"/>
+                            <constraint firstItem="GLQ-dW-uaJ" firstAttribute="top" secondItem="aaB-wf-A0p" secondAttribute="top" id="4Jj-IV-bQa"/>
+                            <constraint firstItem="aaB-wf-A0p" firstAttribute="leading" secondItem="Uv0-Mz-2fV" secondAttribute="leading" constant="5" id="DY0-fr-rpu"/>
+                            <constraint firstItem="GLQ-dW-uaJ" firstAttribute="leading" secondItem="aaB-wf-A0p" secondAttribute="trailing" id="FMo-g2-YHm"/>
+                            <constraint firstItem="dRF-ke-Jh4" firstAttribute="leading" secondItem="Zkp-mn-L83" secondAttribute="trailing" id="Yle-RI-5OJ"/>
+                            <constraint firstAttribute="trailing" secondItem="dRF-ke-Jh4" secondAttribute="trailing" id="azc-zi-87K"/>
+                            <constraint firstItem="dRF-ke-Jh4" firstAttribute="top" secondItem="Uv0-Mz-2fV" secondAttribute="top" id="jVb-e7-VER"/>
+                            <constraint firstItem="aaB-wf-A0p" firstAttribute="top" secondItem="Uv0-Mz-2fV" secondAttribute="top" constant="4" id="mse-fE-2Se"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ghH-4E-9cM"/>
+                    </constraints>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oja-T5-DUT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Sk-kS-ext"/>
+                <constraint firstItem="oja-T5-DUT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y6i-V7-a9f"/>
+                <constraint firstAttribute="trailing" secondItem="oja-T5-DUT" secondAttribute="trailing" id="fLN-g2-Op6"/>
+            </constraints>
+            <point key="canvasLocation" x="-8" y="35"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_white" width="40" height="40"/>
+        <image name="more_action" width="50" height="50"/>
+        <image name="nav_back_white" width="50" height="50"/>
+        <image name="rotate_to_horizontal.shadow" width="50" height="50"/>
+    </resources>
+</document>

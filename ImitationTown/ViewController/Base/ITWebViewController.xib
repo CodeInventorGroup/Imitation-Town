@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-CondBold.otf">
+            <string>DINPro-CondBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITWebViewController" customModule="ImitationTown" customModuleProvider="target">
+            <connections>
+                <outlet property="navButton" destination="Oqu-Ug-5OL" id="fo8-LM-Umk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VI4-e3-cN4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2UW-se-6CQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eI2-2b-jtl" userLabel="导航栏">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VENUES DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vR-OX-Ffv">
+                                        <rect key="frame" x="149" y="14" width="78" height="18"/>
+                                        <fontDescription key="fontDescription" name="DINPro-CondBold" family="DIN Pro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqu-Ug-5OL" userLabel="navBackButton">
+                                        <rect key="frame" x="15" y="12" width="16" height="22"/>
+                                        <state key="normal" image="Nav_back"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h42-hk-zw4">
+                                        <rect key="frame" x="342" y="14" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="QeI-JB-qej"/>
+                                            <constraint firstAttribute="height" constant="18" id="l3Y-VL-Dr4"/>
+                                        </constraints>
+                                        <state key="normal" image="more"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YR-Sx-ekF">
+                                        <rect key="frame" x="309" y="14" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="IuY-fA-ees"/>
+                                            <constraint firstAttribute="width" constant="18" id="zku-8V-4bk"/>
+                                        </constraints>
+                                        <state key="normal" image="share"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="h42-hk-zw4" firstAttribute="leading" secondItem="7YR-Sx-ekF" secondAttribute="trailing" constant="15" id="0WJ-zE-9vO"/>
+                                    <constraint firstItem="h42-hk-zw4" firstAttribute="centerY" secondItem="eI2-2b-jtl" secondAttribute="centerY" constant="0.5" id="312-4W-CkV"/>
+                                    <constraint firstItem="4vR-OX-Ffv" firstAttribute="centerY" secondItem="Oqu-Ug-5OL" secondAttribute="centerY" id="3jd-Ue-Y6A"/>
+                                    <constraint firstItem="7YR-Sx-ekF" firstAttribute="centerY" secondItem="h42-hk-zw4" secondAttribute="centerY" id="EKp-8o-1Y9"/>
+                                    <constraint firstAttribute="height" constant="44" id="LlA-6z-aVa"/>
+                                    <constraint firstAttribute="trailing" secondItem="h42-hk-zw4" secondAttribute="trailing" constant="15" id="Ta9-o0-ox2"/>
+                                    <constraint firstItem="Oqu-Ug-5OL" firstAttribute="leading" secondItem="eI2-2b-jtl" secondAttribute="leading" constant="15" id="VCR-YE-JRe"/>
+                                    <constraint firstItem="4vR-OX-Ffv" firstAttribute="centerX" secondItem="eI2-2b-jtl" secondAttribute="centerX" constant="0.5" id="hkN-y2-1df"/>
+                                    <constraint firstItem="Oqu-Ug-5OL" firstAttribute="centerY" secondItem="eI2-2b-jtl" secondAttribute="centerY" constant="0.5" id="nOd-HE-bcC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eI2-2b-jtl" secondAttribute="trailing" id="czm-tN-ncM"/>
+                            <constraint firstItem="eI2-2b-jtl" firstAttribute="leading" secondItem="2UW-se-6CQ" secondAttribute="leading" id="gZ5-zd-9e7"/>
+                            <constraint firstItem="eI2-2b-jtl" firstAttribute="top" secondItem="2UW-se-6CQ" secondAttribute="top" id="iI4-cI-Uex"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bya-iZ-E15"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="dFo-tQ-Yk5"/>
+                    </constraints>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" button="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="VI4-e3-cN4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="osj-83-C5a"/>
+                <constraint firstAttribute="trailing" secondItem="VI4-e3-cN4" secondAttribute="trailing" id="sxL-eM-oTT"/>
+                <constraint firstItem="VI4-e3-cN4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tzf-Mj-OEY"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Nav_back" width="16" height="16"/>
+        <image name="more" width="21" height="21"/>
+        <image name="share" width="21" height="21"/>
+    </resources>
+</document>

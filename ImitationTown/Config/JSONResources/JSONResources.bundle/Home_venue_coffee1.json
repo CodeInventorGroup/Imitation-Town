@@ -1,0 +1,273 @@
+{
+	"code": 0,
+	"result": {
+		"rows": [{
+			"id": "6623",
+			"createdAt": 1477573295000,
+			"updatedAt": 1477573434000,
+			"venuebookId": "1001580",
+			"venueId": "1013459",
+			"rank": 3000000,
+			"explanation": "听老板聊聊做这家咖啡馆的“初心”和故事。另外，请用心找找店里 5 处暖心的细节，了解它们的故事和来历，用照片记录下来。",
+			"venue": {
+				"id": "1013459",
+				"createdAt": 1464536282000,
+				"updatedAt": 1474861950000,
+				"name": "初心咖啡馆",
+				"alias": "cafe cuore",
+				"address": "东城区汪芝麻胡同59号",
+				"longitude": 116.40705678,
+				"latitude": 39.93086757,
+				"altitude": 61.37,
+				"gcjLongitude": 116.41329956,
+				"gcjLatitude": 39.93227005,
+				"coordinateType": 2,
+				"profileBackgroundId": "1067114",
+				"cardId": "1270477",
+				"pitch": "优质手冲咖啡，亦有精致手作餐点",
+				"phone": "010-84083468",
+				"openTime": ["18:00-21:00", "周一至周五", "10:00-21:00", "周末"],
+				"openTimeDesc": "",
+				"averageCost": 49,
+				"shortCut": "",
+				"status": 0,
+				"closeReason": "",
+				"creatorId": "1002526",
+				"city": "北京",
+				"categories": ["coffee"],
+				"distance": 0,
+				"poiSrc": "town",
+				"poiID": "",
+				"profileBackground": {
+					"id": "1067114",
+					"color": "0.678752 0.634104 0.514031 1.000000",
+					"createdAt": 1464578825000,
+					"thumbnail": "image/20160530/UserProfileBackground/thumbnail/53a4a96459d246e68883ba0db59fadff",
+					"original": "image/20160530/UserProfileBackground/original/53a4a96459d246e68883ba0db59fadff"
+				},
+				"card": {
+					"id": "1270477",
+					"color": "0.656761 0.620878 0.491580 1.000000",
+					"createdAt": 1474895158000,
+					"thumbnail": "image/20160530/VenueCard/thumbnail/53a4a96459d246e68883ba0db59fadff",
+					"original": "image/20160530/VenueCard/std/53a4a96459d246e68883ba0db59fadff"
+				},
+				"cityInfo": {
+					"id": "3",
+					"code": "PEK",
+					"name": "北京",
+					"isAbroad": false,
+					"priority": 4372,
+					"longitude": 116.454953,
+					"latitude": 39.936783,
+					"countryCode": "CN",
+					"countryName": "中国",
+					"continentCode": "Asia",
+					"timezone": "Asia/Shanghai",
+					"rawOffset": 8,
+					"geoSrc": ""
+				},
+				"categoryInfos": [{
+					"code": "coffee",
+					"title": "咖啡",
+					"icons": {
+						"blue": "assets/venue-category/coffee/blue-150x150.png",
+						"white": "assets/venue-category/coffee/white-150x150.png"
+					}
+				}],
+				"fabulaCount": 5,
+				"likersCount": 5,
+				"commentsCount": 0,
+				"isInspire": false,
+				"isFavorite": false,
+				"isDuplicate": 0,
+				"beenPeopleCount": 5
+			}
+		}, {
+			"id": "6510",
+			"createdAt": 1477186268000,
+			"updatedAt": 1477369426000,
+			"venuebookId": "1001580",
+			"venueId": "1057197",
+			"rank": 2000000,
+			"explanation": "在这里了解下“共享际”都有哪些功能区，大家如何在这个空间里共享协作？如果找到有缘人，可以详细了解下“共享际”诞生的故事。找出三处与共享概念相关的设计。",
+			"venue": {
+				"id": "1057197",
+				"createdAt": 1475673430000,
+				"updatedAt": 1477274284000,
+				"name": "共享际（东四）",
+				"alias": "",
+				"address": "东四街道东四九条88号",
+				"longitude": 116.41229652,
+				"latitude": 39.93142062,
+				"altitude": 0,
+				"gcjLongitude": 116.418535,
+				"gcjLatitude": 39.93282,
+				"coordinateType": 2,
+				"profileBackgroundId": "1304155",
+				"cardId": "1304156",
+				"pitch": "集\"工作 娱乐 生活 \"一体的多功能life空间实验室",
+				"phone": "",
+				"openTimeDesc": "",
+				"averageCost": 0,
+				"shortCut": "",
+				"status": 0,
+				"closeReason": "",
+				"creatorId": "1000052",
+				"city": "北京",
+				"categories": ["culture", "service"],
+				"distance": 0,
+				"poiSrc": "town",
+				"poiID": "",
+				"profileBackground": {
+					"id": "1304155",
+					"color": "0.630574 0.570025 0.529025 1.000000",
+					"createdAt": 1477274282000,
+					"thumbnail": "image/20161024/VenueProfileBackground/thumbnail/499fb6d32a6d46c1adb0b92286bad4ea",
+					"original": "image/20161024/VenueProfileBackground/std/499fb6d32a6d46c1adb0b92286bad4ea"
+				},
+				"card": {
+					"id": "1304156",
+					"color": "0.637509 0.568609 0.523436 1.000000",
+					"createdAt": 1477274282000,
+					"thumbnail": "image/20161024/VenueCard/thumbnail/d9ef766eda254a929c11ff89467d4e76",
+					"original": "image/20161024/VenueCard/std/d9ef766eda254a929c11ff89467d4e76"
+				},
+				"cityInfo": {
+					"id": "3",
+					"code": "PEK",
+					"name": "北京",
+					"isAbroad": false,
+					"priority": 4372,
+					"longitude": 116.454953,
+					"latitude": 39.936783,
+					"countryCode": "CN",
+					"countryName": "中国",
+					"continentCode": "Asia",
+					"timezone": "Asia/Shanghai",
+					"rawOffset": 8,
+					"geoSrc": ""
+				},
+				"categoryInfos": [{
+					"code": "culture",
+					"title": "文化艺术",
+					"icons": {
+						"blue": "assets/venue-category/culture/blue-150x150.png",
+						"white": "assets/venue-category/culture/white-150x150.png"
+					}
+				}, {
+					"code": "service",
+					"title": "服务",
+					"icons": {
+						"blue": "assets/venue-category/service/blue-150x150.png",
+						"white": "assets/venue-category/service/white-150x150.png"
+					}
+				}],
+				"fabulaCount": 11,
+				"likersCount": 12,
+				"commentsCount": 1,
+				"isInspire": false,
+				"isFavorite": false,
+				"isDuplicate": 0,
+				"beenPeopleCount": 5
+			}
+		}, {
+			"id": "6581",
+			"createdAt": 1477327324000,
+			"updatedAt": 1477370747000,
+			"venuebookId": "1001580",
+			"venueId": "1002189",
+			"rank": 500000,
+			"explanation": "拜访“在高处图书馆”，看看他们怎么定义什么是“高品质、有营养的图书”，和这里的管理员聊聊在高处图书馆的运作方式。每人挑选一本感兴趣的书，花十分钟看一会儿，彼此做个简单分享。",
+			"venue": {
+				"id": "1002189",
+				"createdAt": 1447303467000,
+				"updatedAt": 1477351385000,
+				"name": "在高处图书馆",
+				"alias": "享借小院",
+				"address": "东四北大街179号",
+				"longitude": 116.41040935,
+				"latitude": 39.93464923,
+				"altitude": 43.77,
+				"gcjLongitude": 116.41665,
+				"gcjLatitude": 39.93605,
+				"coordinateType": 2,
+				"profileBackgroundId": "1304606",
+				"cardId": "1304607",
+				"pitch": "筛选出人类最优质的好书，意为“在高处”",
+				"phone": "13581933215",
+				"openTime": ["11:00-23:00"],
+				"openTimeDesc": "",
+				"averageCost": 0,
+				"shortCut": "",
+				"status": 0,
+				"closeReason": "",
+				"creatorId": "1000207",
+				"city": "北京",
+				"categories": ["culture", "subculture"],
+				"distance": 0,
+				"poiSrc": "town",
+				"poiID": "",
+				"profileBackground": {
+					"id": "1304606",
+					"color": "0.684347 0.667223 0.656799 1.000000",
+					"createdAt": 1477351382000,
+					"thumbnail": "image/20161024/VenueProfileBackground/thumbnail/cf8c900f3fba4eaeaa00f3512e31748c",
+					"original": "image/20161024/VenueProfileBackground/std/cf8c900f3fba4eaeaa00f3512e31748c"
+				},
+				"card": {
+					"id": "1304607",
+					"color": "0.720422 0.693289 0.673061 1.000000",
+					"createdAt": 1477351382000,
+					"thumbnail": "image/20161024/VenueCard/thumbnail/15d2823757474e0f8f6b5d3538905313",
+					"original": "image/20161024/VenueCard/std/15d2823757474e0f8f6b5d3538905313"
+				},
+				"cityInfo": {
+					"id": "3",
+					"code": "PEK",
+					"name": "北京",
+					"isAbroad": false,
+					"priority": 4372,
+					"longitude": 116.454953,
+					"latitude": 39.936783,
+					"countryCode": "CN",
+					"countryName": "中国",
+					"continentCode": "Asia",
+					"timezone": "Asia/Shanghai",
+					"rawOffset": 8,
+					"geoSrc": ""
+				},
+				"categoryInfos": [{
+					"code": "culture",
+					"title": "文化艺术",
+					"icons": {
+						"blue": "assets/venue-category/culture/blue-150x150.png",
+						"white": "assets/venue-category/culture/white-150x150.png"
+					}
+				}, {
+					"code": "subculture",
+					"title": "亚文化",
+					"icons": {
+						"blue": "assets/venue-category/subculture/blue-150x150.png",
+						"white": "assets/venue-category/subculture/white-150x150.png"
+					}
+				}],
+				"fabulaCount": 6,
+				"likersCount": 7,
+				"commentsCount": 0,
+				"isInspire": false,
+				"isFavorite": false,
+				"isDuplicate": 0,
+				"beenPeopleCount": 4
+			}
+		}],
+		"paging": {
+			"cursors": {
+				"top": "0",
+				"last": "2"
+			},
+			"previous": null,
+			"next": null
+		}
+	}
+}
