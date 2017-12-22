@@ -24,7 +24,6 @@
 		1C82C8861DB613F9001A03BE /* ITLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE035FB1DB6119F0064F2B6 /* ITLoadingViewController.swift */; };
 		1C82C8871DB613F9001A03BE /* ImitationTown-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE035FF1DB612DA0064F2B6 /* ImitationTown-Prefix.swift */; };
 		1C82C8891DB61410001A03BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB96B71DB4A6BC00ADE298 /* AppDelegate.swift */; };
-		1C91CC311DB615D1008E7BF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91CC301DB615D1008E7BF0 /* Default-568h@2x.png */; };
 		1C91CC351DB616EB008E7BF0 /* ITSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CC341DB616EB008E7BF0 /* ITSearchViewController.swift */; };
 		1C944E8F1E826FEE009E79E6 /* UIButton+ITExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C944E8E1E826FEE009E79E6 /* UIButton+ITExtension.swift */; };
 		1C9ED7C61E4AFC5500D7303E /* ITSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9ED7C41E4AFC5500D7303E /* ITSegmentView.swift */; };
@@ -92,6 +91,7 @@
 		B05AC5441F38B2AD0085D3F1 /* ITMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5431F38B2AD0085D3F1 /* ITMessageViewController.swift */; };
 		B05AC5461F38B2E90085D3F1 /* ITMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5451F38B2E90085D3F1 /* ITMineViewController.swift */; };
 		B05AC5481F38B2F60085D3F1 /* ITPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5471F38B2F60085D3F1 /* ITPostViewController.swift */; };
+		B0EBBDFE1FED0D3D00F1A3AE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBBDFD1FED0D3C00F1A3AE /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +124,6 @@
 		1C4872F31E5EC63800EA9190 /* ITSearchStoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITSearchStoryCell.xib; sourceTree = "<group>"; };
 		1C7728351DBDB7A4008048DC /* UILabel+ITExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+ITExtension.swift"; sourceTree = "<group>"; };
 		1C82C8821DB613E7001A03BE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		1C91CC301DB615D1008E7BF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		1C91CC321DB615DA008E7BF0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ImitationTown/Info.plist; sourceTree = SOURCE_ROOT; };
 		1C91CC341DB616EB008E7BF0 /* ITSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITSearchViewController.swift; sourceTree = "<group>"; };
 		1C944E8D1E82647F009E79E6 /* ImitationTown_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImitationTown_Bridging_Header.h; sourceTree = "<group>"; };
@@ -205,6 +204,7 @@
 		B05AC5431F38B2AD0085D3F1 /* ITMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITMessageViewController.swift; sourceTree = "<group>"; };
 		B05AC5451F38B2E90085D3F1 /* ITMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITMineViewController.swift; sourceTree = "<group>"; };
 		B05AC5471F38B2F60085D3F1 /* ITPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITPostViewController.swift; sourceTree = "<group>"; };
+		B0EBBDFD1FED0D3C00F1A3AE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D4FC048B021802738B28392B /* Pods_ImitationTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImitationTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -370,7 +370,6 @@
 				4683DF611DCC9146002F9D6C /* JSONResources */,
 				46947A551DB8755E0005BD98 /* DINPro-CondBold.otf */,
 				1C91CC321DB615DA008E7BF0 /* Info.plist */,
-				1C91CC301DB615D1008E7BF0 /* Default-568h@2x.png */,
 				1C944E8D1E82647F009E79E6 /* ImitationTown_Bridging_Header.h */,
 				1CE035FF1DB612DA0064F2B6 /* ImitationTown-Prefix.swift */,
 			);
@@ -536,6 +535,7 @@
 		46CB96B61DB4A6BC00ADE298 /* ImitationTown */ = {
 			isa = PBXGroup;
 			children = (
+				B0EBBDFD1FED0D3C00F1A3AE /* Launch Screen.storyboard */,
 				46CB96B71DB4A6BC00ADE298 /* AppDelegate.swift */,
 				4666A6EA1DBF525E00CE0AFC /* ViewModel */,
 				1CE035EB1DB610A70064F2B6 /* ViewController */,
@@ -739,7 +739,6 @@
 				466CA2BF1E65219400998E85 /* Main.storyboard in Resources */,
 				1C4872F51E5EC63800EA9190 /* ITSearchStoryCell.xib in Resources */,
 				1CF7201F1E973EB3001E9D9A /* ITMomentStoryInformationView.xib in Resources */,
-				1C91CC311DB615D1008E7BF0 /* Default-568h@2x.png in Resources */,
 				B02A2FCE1F5D1F8200A6F6B1 /* ITMessageTableViewCell.xib in Resources */,
 				1C36A3F61E7BBD1E004B222B /* ITMapViewController.xib in Resources */,
 				462CAAEF1E82503A005201C0 /* ITWebViewController.xib in Resources */,
@@ -751,6 +750,7 @@
 				462C821C1E799BB7005915EE /* ITVenueHeaderView.xib in Resources */,
 				463D1CB71E49D07000C9BD7D /* ITHomeVenuebookCell.xib in Resources */,
 				465209681E7A8CC60077E7AE /* ITVenuebookDetailCell.xib in Resources */,
+				B0EBBDFE1FED0D3D00F1A3AE /* Launch Screen.storyboard in Resources */,
 				1CF720211E97402E001E9D9A /* ITMomentStoryUserContainerView.xib in Resources */,
 				4635598B1E645E6900264D20 /* ITSelectCityViewController.xib in Resources */,
 				461793731E79780F001C9BAA /* ITCategoryViewController.xib in Resources */,
