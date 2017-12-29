@@ -11,17 +11,17 @@ import UIKit
 
 class ITUserLocationView: MAPinAnnotationView {
     
-    private var imageView = UIImageView()
+    private var imgView = UIImageView()
     private var isRotating: Bool = false
     
     var iconImage: UIImage! {
     
         didSet {
-            imageView = UIImageView(image: iconImage)
-            imageView.layer.cornerRadius = self.frame.size.width/2
-            imageView.layer.masksToBounds = true
-            imageView.frame = self.bounds
-            self.addSubview(imageView)
+            imgView = UIImageView(image: iconImage)
+            imgView.layer.cornerRadius = self.frame.size.width/2
+            imgView.layer.masksToBounds = true
+            imgView.frame = self.bounds
+            self.addSubview(imgView)
         }
     }
     
@@ -38,7 +38,7 @@ class ITUserLocationView: MAPinAnnotationView {
         let keyAnimation = CAKeyframeAnimation(keyPath: "transform.rotation")
         keyAnimation.values = [0, 2 * Double.pi+20/180 * Double.pi, 2 * Double.pi-20/180 * Double.pi, 2 * Double.pi]
         keyAnimation.duration = duration
-        self.imageView.layer.add(keyAnimation, forKey: "keyAnimation")
+        self.imgView.layer.add(keyAnimation, forKey: "keyAnimation")
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
             self.isRotating = false
@@ -81,6 +81,6 @@ class ITUserLocationView: MAPinAnnotationView {
         spreadLayer.add(animationGroup, forKey: "spead")
         
         self.layer.addSublayer(spreadLayer)
-        self.layer.insertSublayer(spreadLayer, below: imageView.layer)
+        self.layer.insertSublayer(spreadLayer, below: imgView.layer)
     }
 }
