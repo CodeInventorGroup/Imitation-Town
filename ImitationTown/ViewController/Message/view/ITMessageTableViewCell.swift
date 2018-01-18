@@ -31,7 +31,7 @@ class ITMessageTableViewCell: UITableViewCell {
                 }
                 
                 let attributeStr = NSMutableAttributedString.init(string: model.user_name + ": " + model.user_introduce)
-                attributeStr.addAttributes([NSForegroundColorAttributeName: UIColor.black], range: NSMakeRange(0, model.user_name.characters.count + 2))
+                attributeStr.addAttributes([NSForegroundColorAttributeName: UIColor.black], range: NSMakeRange(0, model.user_name.count + 2))
                 
                 self.introductionLabel.attributedText = attributeStr
                 

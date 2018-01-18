@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,7 +32,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xt-3P-bWS">
-                                    <rect key="frame" x="4" y="98" width="504" height="85.5"/>
+                                    <rect key="frame" x="4" y="88" width="504" height="95.5"/>
                                     <string key="text">ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_ManoBoo_</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
@@ -52,7 +52,7 @@
                                 <constraint firstAttribute="trailing" secondItem="EQs-qj-VDa" secondAttribute="trailing" constant="15" id="TuU-mO-HVw"/>
                                 <constraint firstItem="5Xt-3P-bWS" firstAttribute="leading" secondItem="hm8-NA-skM" secondAttribute="leading" id="cnb-fW-nDS"/>
                                 <constraint firstAttribute="trailing" secondItem="EQs-qj-VDa" secondAttribute="trailing" constant="15" id="eJa-tb-ekG"/>
-                                <constraint firstItem="5Xt-3P-bWS" firstAttribute="top" secondItem="hm8-NA-skM" secondAttribute="bottom" constant="30" id="hAn-30-PQx"/>
+                                <constraint firstItem="5Xt-3P-bWS" firstAttribute="top" secondItem="hm8-NA-skM" secondAttribute="bottom" constant="20" id="hAn-30-PQx"/>
                                 <constraint firstItem="EQs-qj-VDa" firstAttribute="top" secondItem="hm8-NA-skM" secondAttribute="top" id="iX1-4l-Ghs"/>
                                 <constraint firstItem="hm8-NA-skM" firstAttribute="leading" secondItem="sND-8y-dog" secondAttribute="leading" constant="4" id="vMz-cp-fM1"/>
                                 <constraint firstItem="hm8-NA-skM" firstAttribute="top" secondItem="sND-8y-dog" secondAttribute="top" constant="4" id="vl3-lL-IQF"/>
