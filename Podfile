@@ -1,5 +1,7 @@
 use_frameworks!
 
+platform :ios, '10.0'
+
 target 'ImitationTown' do
     pod 'RxSwift',    '3.0.0-rc.1'
     pod 'RxCocoa',    '3.0.0-rc.1'

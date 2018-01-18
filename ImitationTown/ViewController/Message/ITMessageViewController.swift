@@ -54,7 +54,7 @@ class ITMessageViewController: ITBaseViewController {
     var messageFeeds = [ITMessageFeedModel.randomFeed()]
   
     // 刷新的间隔
-    var refresh_interval: TimeInterval = 2
+    var refresh_interval: TimeInterval = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +92,6 @@ class ITMessageViewController: ITBaseViewController {
         // 用定时器模拟 长链接
         Observable<Int>.interval(refresh_interval, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (index) in
-                print("\(index) GET FEEDS SUCCESS!")
                     guard let `self` = self else { return }
                     self.messageFeeds.insert(ITMessageFeedModel.randomFeed(), at: 0)
                     self.updateFeeds()
