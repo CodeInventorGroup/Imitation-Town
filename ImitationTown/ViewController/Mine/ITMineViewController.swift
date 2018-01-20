@@ -9,10 +9,26 @@
 import UIKit
 
 class ITMineViewController: ITBaseViewController {
+    
+    let scrollView = UIScrollView.init(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         controllerType = .Mine
-        // Do any additional setup after loading the view.
+        
+        buildlUI()
+    }
+    
+    
+    func buildlUI() {
+        view.addSubview(scrollView)
+        scrollView.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+            maker.width.equalToSuperview()
+        }
+    }
+    
+    func buildPersonalInfo() {
+        
     }
 }
