@@ -10,7 +10,7 @@ import UIKit
 
 class ITMineViewController: ITBaseViewController {
     
-    let scrollView = UIScrollView.init(frame: .zero)
+    let mineView = ITMineView.init(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +19,14 @@ class ITMineViewController: ITBaseViewController {
         buildlUI()
     }
     
-    
+
     func buildlUI() {
-        view.addSubview(scrollView)
-        scrollView.snp.makeConstraints { (maker) in
+        view.addSubview(mineView)
+        mineView.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
-            maker.width.equalToSuperview()
         }
-    }
-    
-    func buildPersonalInfo() {
-        
+        mineView.clickMember = { index in
+            self.push(to: ITMemberViewController(), animated: true)
+        }
     }
 }

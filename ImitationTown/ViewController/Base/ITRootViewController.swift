@@ -30,7 +30,6 @@ class ITRootViewController: ITBaseViewController, UIScrollViewDelegate {
     var postViewController: ITPostViewController!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +41,6 @@ class ITRootViewController: ITBaseViewController, UIScrollViewDelegate {
         configureITToolBar()
         
         initViewControllers()
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,24 +53,22 @@ class ITRootViewController: ITBaseViewController, UIScrollViewDelegate {
     func configureITToolBar() -> Swift.Void {
         
         //由于ITToolBar.share.currentIndex 是依据 scrollViewDidEndDecelerating 来改变的，所以可以在switchItem中写刷新页面的方法
-        weak var weakSelf = self
         
-        ITToolBar.share.switchItem = {(event : ITToolBarEvent) -> () in
+        ITToolBar.share.switchItem = { [weak self] (event : ITToolBarEvent) -> () in
             print(event)
+            guard let `self` = self else { return }
+            
             let offSetX = CGFloat(6 - event.rawValue) * SCREEN_WIDTH
-            
-            weakSelf!.changeChannel(6-event.rawValue)
-            
-            weakSelf!.showScrollView.setContentOffset(CGPoint(x: offSetX, y: 0), animated: true)
+            self.changeChannel(6-event.rawValue)
+            self.showScrollView.setContentOffset(CGPoint(x: offSetX, y: 0), animated: true)
             switch event {
             case .Add:
-                
                 break
-            case .Mine: break
+            case .Mine:
+                break
             case .Feed:
                 break
             case .Home:
-                
                 break
                 
             default: break
@@ -129,12 +125,13 @@ class ITRootViewController: ITBaseViewController, UIScrollViewDelegate {
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
-        let currentIndex = Int(scrollView.contentOffset.x / SCREEN_WIDTH)
+        let pageNum = Int(scrollView.contentOffset.x / SCREEN_WIDTH)
 
-        changeChannel(currentIndex)
+        changeChannel(pageNum)
         
-        let tag = 6 - currentIndex
-        ITToolBar.share.currentIndex = ITToolBarEvent(rawValue: tag)!
+        if let barIndex = ITToolBarEvent(rawValue: 6 - pageNum) {
+            ITToolBar.share.currentIndex = barIndex
+        }
     }
     
     // 手动执行viewWillAppear && viewWillDisappear

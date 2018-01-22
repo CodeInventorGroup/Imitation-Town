@@ -37,12 +37,12 @@ class ITToolBar: UIView {
     //手动切换Item
     var currentIndex : ITToolBarEvent = .Home {
         willSet  {
-            let button = self.viewWithTag(currentIndex.rawValue) as! UIButton
-            button.isSelected = false;
+            let button = self.viewWithTag(currentIndex.rawValue) as? UIButton
+            button?.isSelected = false;
         }
         didSet {
-            let button = self.viewWithTag(currentIndex.rawValue) as! UIButton
-            button.isSelected = true;
+            let button = self.viewWithTag(currentIndex.rawValue) as? UIButton
+            button?.isSelected = true;
             switchItem?(currentIndex)
         }
     }
@@ -52,12 +52,12 @@ class ITToolBar: UIView {
     
     var onlyChangeIndex: ITToolBarEvent = .Home {
         willSet  {
-            let button = self.viewWithTag(onlyChangeIndex.rawValue) as! UIButton
-            button.isSelected = false;
+            let button = self.viewWithTag(onlyChangeIndex.rawValue) as? UIButton
+            button?.isSelected = false;
         }
         didSet {
-            let button = self.viewWithTag(onlyChangeIndex.rawValue) as! UIButton
-            button.isSelected = true;
+            let button = self.viewWithTag(onlyChangeIndex.rawValue) as? UIButton
+            button?.isSelected = true;
         }
     }
     
@@ -65,6 +65,10 @@ class ITToolBar: UIView {
     
     //指示器
     private var indicator : UIImageView!
+    
+    private convenience init() {
+        self.init(frame: .zero)
+    }
     
     //严谨实现单例，应该将初始化方法设置为 private
     private override init(frame: CGRect) {
@@ -77,7 +81,6 @@ class ITToolBar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     //MARK: 滑动时调整指示器的位置
     func changeIndicator(contentOffset : CGPoint) -> Swift.Void {
         let offsetX = contentOffset.x
@@ -86,24 +89,22 @@ class ITToolBar: UIView {
         let idx = 6 - Int(t)
         
         let scale = (offsetX - t.maxCGFloatValue * SCREEN_WIDTH) / SCREEN_WIDTH
-        if offsetX == 0.0 {
-            indicator.center.x = getItem(tag: 6).center.x
+        if offsetX == 0 {
+            indicator.snp.updateConstraints { $0.centerX.equalTo(30) }
             return
         }
         
+        var toCenterX: CGFloat = 30.0
         if idx == 1 {
-            indicator.center.x = getItem(tag: 1).center.x + (getItem(tag: 1).center.x - getItem(tag: 2).center.x) * scale
-        }else {
-            indicator.center.x = getItem(tag: idx).center.x + (getItem(tag: idx-1).center.x - getItem(tag: idx).center.x) * scale
+            toCenterX = getItem(1).center.x + (getItem(1).center.x - getItem(2).center.x) * scale
+        } else {
+            toCenterX = getItem(idx).center.x + (getItem(idx-1).center.x - getItem(idx).center.x) * scale
         }
+        indicator.snp.updateConstraints { $0.centerX.equalTo(toCenterX) }
     }
 
     //MARK: 设置隐藏
-//    func hidden(_ isHidden: Bool, animated : Bool) {
-//        hidden(isHidden, animated: animated, .DefaultAnimation)
-//    }
-    
-    func hidden(_ isHidden: Bool, animated : Bool) -> Void {
+    func hidden(_ isHidden: Bool, animated : Bool) {
         if animated {
             switch animationType {
                 case .fadeInout:
@@ -148,9 +149,9 @@ class ITToolBar: UIView {
             make.width.equalTo(8)
             make.height.equalTo(6)
             make.bottom.equalTo(self).offset(-1)
-            make.left.greaterThanOrEqualTo(0)
+            make.centerX.equalTo(30)
         }
-        indicator.center.x = getItem(tag: 6).center.x
+        indicator.center.x = getItem(6).center.x
     }
     
     // init BarItems 初始化Items
@@ -200,7 +201,7 @@ class ITToolBar: UIView {
         
         //类似于将这几个按钮放到数组里面一起处理
         weak var weakSelf = self
-        let _ = [createButton(tag: 1),createButton(tag: 2),createButton(tag: 3),createButton(tag: 4), createHomeAndFeed(tag : 5), createHomeAndFeed(tag : 6)].map { (button) -> UIButton in
+        _ = [createButton(tag: 1),createButton(tag: 2),createButton(tag: 3),createButton(tag: 4), createHomeAndFeed(tag : 5), createHomeAndFeed(tag : 6)].map { (button) in
             //添加点击事件
             button.rx.tap.subscribe({ (event) in
                 
@@ -209,17 +210,14 @@ class ITToolBar: UIView {
                     weakSelf!.currentIndex = ITToolBarEvent(rawValue: button.tag)!
                 }
             }).addDisposableTo(weakSelf!.disposeBag)
-            
-            return button
         }
     
     }
     
-    func getItem(tag : Int) -> UIButton {
+    func getItem(_ tag : Int) -> UIButton {
         let item = self.viewWithTag(tag)
         return item as! UIButton
     }
-    
 }
 
 

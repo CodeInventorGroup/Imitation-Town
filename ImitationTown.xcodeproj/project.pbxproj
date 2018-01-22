@@ -92,6 +92,8 @@
 		B05AC5441F38B2AD0085D3F1 /* ITMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5431F38B2AD0085D3F1 /* ITMessageViewController.swift */; };
 		B05AC5461F38B2E90085D3F1 /* ITMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5451F38B2E90085D3F1 /* ITMineViewController.swift */; };
 		B05AC5481F38B2F60085D3F1 /* ITPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5471F38B2F60085D3F1 /* ITPostViewController.swift */; };
+		B0966747201628890019DB1C /* ITMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0966745201628890019DB1C /* ITMemberViewController.swift */; };
+		B09667482016288A0019DB1C /* ITMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0966746201628890019DB1C /* ITMemberViewController.xib */; };
 		B0EBBDFE1FED0D3D00F1A3AE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBBDFD1FED0D3C00F1A3AE /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -206,6 +208,8 @@
 		B05AC5431F38B2AD0085D3F1 /* ITMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITMessageViewController.swift; sourceTree = "<group>"; };
 		B05AC5451F38B2E90085D3F1 /* ITMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITMineViewController.swift; sourceTree = "<group>"; };
 		B05AC5471F38B2F60085D3F1 /* ITPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITPostViewController.swift; sourceTree = "<group>"; };
+		B0966745201628890019DB1C /* ITMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITMemberViewController.swift; sourceTree = "<group>"; };
+		B0966746201628890019DB1C /* ITMemberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITMemberViewController.xib; sourceTree = "<group>"; };
 		B0EBBDFD1FED0D3C00F1A3AE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D4FC048B021802738B28392B /* Pods_ImitationTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImitationTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -597,6 +601,7 @@
 		B05AC5411F38B2430085D3F1 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				B0966744201628550019DB1C /* MemberInfo */,
 				B03F8507201304A300B5D9DF /* View */,
 				B05AC5451F38B2E90085D3F1 /* ITMineViewController.swift */,
 			);
@@ -609,6 +614,15 @@
 				B05AC5471F38B2F60085D3F1 /* ITPostViewController.swift */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		B0966744201628550019DB1C /* MemberInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B0966745201628890019DB1C /* ITMemberViewController.swift */,
+				B0966746201628890019DB1C /* ITMemberViewController.xib */,
+			);
+			path = MemberInfo;
 			sourceTree = "<group>";
 		};
 		D66CA8F6292EFBB56A243DAA /* Pods */ = {
@@ -749,6 +763,7 @@
 				46B03FD71E28813900E30F0D /* JSONResources.bundle in Resources */,
 				463C27821E94B1A50025414C /* CIBlurHUD.bundle in Resources */,
 				46CB96BF1DB4A6BC00ADE298 /* Assets.xcassets in Resources */,
+				B09667482016288A0019DB1C /* ITMemberViewController.xib in Resources */,
 				466CA2BF1E65219400998E85 /* Main.storyboard in Resources */,
 				1C4872F51E5EC63800EA9190 /* ITSearchStoryCell.xib in Resources */,
 				1CF7201F1E973EB3001E9D9A /* ITMomentStoryInformationView.xib in Resources */,
@@ -905,6 +920,7 @@
 				463559891E645CAB00264D20 /* ITSelectCityViewController.swift in Sources */,
 				463D1CBA1E4AF03300C9BD7D /* ITHomeCityStoryCell.swift in Sources */,
 				1C25B7121E4C50A500D58DF4 /* UIView+Extension.swift in Sources */,
+				B0966747201628890019DB1C /* ITMemberViewController.swift in Sources */,
 				462C821A1E799B62005915EE /* ITVenueHeaderView.swift in Sources */,
 				464EFC841E2484F600583B55 /* UITableView+CIExtension.swift in Sources */,
 				1C944E8F1E826FEE009E79E6 /* UIButton+ITExtension.swift in Sources */,

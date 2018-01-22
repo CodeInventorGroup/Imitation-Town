@@ -96,7 +96,7 @@ class ITHomeViewController: ITBaseViewController, CIForceTouchDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        ITToolBar.share.hidden(false, animated: true)
+//        ITToolBar.share.hidden(false, animated: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

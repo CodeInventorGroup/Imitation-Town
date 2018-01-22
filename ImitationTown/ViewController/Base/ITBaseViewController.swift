@@ -53,13 +53,27 @@ class ITBaseViewController: UIViewController, ITBaseViewControllerProtocol {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        
         if DebugMode {
             print("\(self.self)__viewWillAppear ")
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let nav = nav ?? navigationController,
+            nav.viewControllers.count == 1 {
+            ITToolBar.share.hidden(false, animated: animated)
+        } else {
+            ITToolBar.share.hidden(true, animated: animated)
+        }
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         if DebugMode {
             print("\(self.self)__viewWillDisapppear")
         }
@@ -81,7 +95,7 @@ class ITBaseViewController: UIViewController, ITBaseViewControllerProtocol {
     
     //MARK: Action
     func push(to vc: UIViewController, animated: Bool) -> Swift.Void {
-        let nav = RootViewControllerMode == .scrollView ? self.nav : self.navigationController
+        let nav = self.nav ?? self.navigationController
         nav?.pushViewController(vc, animated: animated)
     }
     

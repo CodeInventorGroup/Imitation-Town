@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class ITLoadingViewController: ITBaseViewController {
+class ITLoadingViewController: UIViewController {
 
     var imgViewArray : Array<UIImageView>?
     

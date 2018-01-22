@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ITMineView: UIView {
     
-    var thumbImage: String?
+    var clickMember: ( (Int) -> Void )? {
+        didSet {
+            manobooControl.addHandler(for: .touchUpInside) { _ in self.clickMember?(0) }
+            zrflowerControl.addHandler(for: .touchUpInside) { _ in self.clickMember?(1) }
+        }
+    }
+    fileprivate let manobooControl = UIControl.init()
+    fileprivate let manobooView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .dark))
     
-    var name: String?
+    fileprivate let zrflowerControl = UIControl()
+    fileprivate let zrflowerView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .dark))
     
-    var links: [String: String]?
+    fileprivate let titleLabel = UILabel()
     
-    let avatarImageView = UIImageView()
-    let contentView = ITMineBlurView.init(effect: UIBlurEffect.init(style: .light))
+    fileprivate let thumbImages = [ManoBooAvatar, ZRFlowerAvatar]
+    var thumbImageViews = [UIImageView]()
 
+    fileprivate let names = ["ManoBoo", "ZRFlower"]
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         buildUI()
@@ -29,28 +40,69 @@ class ITMineView: UIView {
     }
     
     func buildUI() {
-        addSubview(contentView)
-        addSubview(avatarImageView)
-        avatarImageView.snp.makeConstraints { (maker) in
-            maker.width.equalTo(34)
-            maker.height.equalTo(34)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 48.0)
+        titleLabel.text = "关于我们"
+        addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { (maker) in
+            maker.left.equalTo(20)
+            maker.right.equalTo(20)
+            maker.top.equalTo(20)
+        }
+        manobooView.layer.cornerRadius = 10.0
+        manobooView.layer.masksToBounds = true
+        
+        zrflowerView.layer.cornerRadius = 10.0
+        zrflowerView.layer.masksToBounds = true
+        
+        manobooView.contentView.addSubview(manobooControl)
+        manobooControl.snp.makeConstraints { $0.edges.equalToSuperview() }
+        addSubview(manobooView)
+        manobooView.snp.makeConstraints { (maker) in
+            maker.left.equalTo(20)
+            maker.right.equalTo(-20)
+            maker.top.equalTo(titleLabel.snp.bottom).offset(50)
+            maker.height.equalTo(140)
+        }
+        
+        zrflowerView.contentView.addSubview(zrflowerControl)
+        zrflowerControl.snp.makeConstraints { $0.edges.equalToSuperview() }
+        addSubview(zrflowerView)
+        zrflowerView.snp.makeConstraints { (maker) in
+            maker.left.equalTo(20)
+            maker.right.equalTo(-20)
+            maker.top.equalTo(manobooView.snp.bottom).offset(40)
+            maker.height.equalTo(140)
+        }
+        
+        buildDetail()
+    }
+    
+    func buildDetail() {
+        for (index, infoView) in [manobooView, zrflowerView].enumerated() {
+            let thumbImgView = UIImageView()
+            thumbImgView.layer.cornerRadius = 50
+            thumbImgView.layer.masksToBounds = true
+            thumbImageViews.append(thumbImgView)
+            thumbImgView.kf.setImage(with: ImageResource.init(downloadURL: URL(string: thumbImages[index])!))
+            infoView.contentView.addSubview(thumbImgView)
+            thumbImgView.snp.makeConstraints({ (maker) in
+                maker.left.top.equalTo(20)
+                maker.bottom.equalTo(-20)
+                maker.width.equalTo(infoView.snp.height).offset(-40)
+            })
+            
+            let nameLabel = UILabel()
+            nameLabel.text = names[index]
+            nameLabel.textColor = .white
+            infoView.contentView.addSubview(nameLabel)
+            nameLabel.font = UIFont.boldSystemFont(ofSize: 24.0)
+            nameLabel.textAlignment = .center
+            nameLabel.snp.makeConstraints({ (maker) in
+                maker.right.equalTo(-20)
+                maker.left.equalTo(thumbImgView.snp.right).offset(40)
+                maker.centerY.equalToSuperview()
+            })
         }
     }
 }
 
-class ITMineBlurView: UIVisualEffectView {
-    
-    var gapCornerRadius: CGFloat = 34.0
-    var cornerRadius: CGFloat = 3.0
-    
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        
-        let path = UIBezierPath.init()
-        path.addArc(withCenter: CGPoint.init(x: cornerRadius, y: cornerRadius), radius: cornerRadius, startAngle: 0.0, endAngle: CGFloat.pi / 2, clockwise: true)
-        path.move(to: CGPoint.init(x: cornerRadius, y: 0))
-        
-        var leftGapPoint = rect.width
-        path.addLine(to: CGPoint.init(x: <#T##CGFloat#>, y: 0))
-    }
-}
