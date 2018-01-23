@@ -10,6 +10,7 @@
 
 import UIKit
 import ImageIO
+import MobileCoreServices
 
 private func < <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
     switch (lhs, rhs) {
@@ -202,6 +203,7 @@ extension UIImage {
 
         let animation = UIImage.animatedImage(with: frames,
                                               duration: Double(duration) / 1000.0)
+        images.removeAll()
         return animation
     }
     // UIImage+Gif implementation end

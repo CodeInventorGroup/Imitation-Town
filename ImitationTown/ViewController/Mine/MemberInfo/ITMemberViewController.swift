@@ -8,15 +8,14 @@
 
 import UIKit
 import Kingfisher
-import ImageIO
-import MobileCoreServices
+import Gifu
 
-class ITMemberViewController: UIViewController {
+class ITMemberViewController: ITBaseViewController {
 
     var name = ""
     var avatar = ""
 
-    @IBOutlet weak var avatarImgView: AnimatedImageView!
+    @IBOutlet weak var avatarImgView: GIFImageView!
 
     @IBOutlet weak var nameLabel: UILabel!
 
@@ -34,7 +33,7 @@ class ITMemberViewController: UIViewController {
     //MARK: Build UI
     func buildUI() {
         if name == "Mano Boo" {
-            avatarImgView.image = UIImage.gifImage(name: "AnimatedAvatar")
+            avatarImgView.animate(withGIFNamed: "AnimatedAvatar")
         } else {
             if let avatarUrl = URL.init(string: avatar) {
                 avatarImgView.kf.setImage(with: ImageResource.init(downloadURL: avatarUrl))

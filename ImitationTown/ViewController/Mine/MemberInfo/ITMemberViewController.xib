@@ -46,7 +46,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6CX-2i-fbJ">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6CX-2i-fbJ" customClass="GIFImageView" customModule="Gifu">
                     <rect key="frame" x="281" y="321.5" width="64" height="64"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="64" id="8CM-sv-6wN"/>

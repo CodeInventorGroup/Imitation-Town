@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Gifu
 
 class ITMineView: UIView {
     
@@ -27,7 +28,7 @@ class ITMineView: UIView {
         }
     }
 
-    fileprivate let backgroundImgView = UIImageView()
+    fileprivate let backgroundImgView = GIFImageView()
 
     fileprivate let manobooControl = UIControl.init()
     fileprivate let manobooView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .extraLight))
@@ -53,7 +54,8 @@ class ITMineView: UIView {
     
     func buildUI() {
         addSubview(backgroundImgView)
-        backgroundImgView.image = UIImage.gifImage(name: "Mine_background")
+//        backgroundImgView.image = UIImage.gifImage(name: "Mine_background")
+        backgroundImgView.animate(withGIFNamed: "Mine_background")
         backgroundImgView.contentMode = UIViewContentMode.scaleAspectFill
         backgroundImgView.clipsToBounds = true
         backgroundImgView.snp.makeConstraints { (maker) in
@@ -75,23 +77,23 @@ class ITMineView: UIView {
         zrflowerView.layer.cornerRadius = 10.0
         zrflowerView.layer.masksToBounds = true
         
-        manobooView.contentView.addSubview(manobooControl)
-        manobooControl.snp.makeConstraints { $0.edges.equalToSuperview() }
-        addSubview(manobooView)
-        manobooView.snp.makeConstraints { (maker) in
-            maker.left.equalTo(20)
-            maker.right.equalTo(-20)
-            maker.top.equalTo(titleLabel.snp.bottom).offset(50)
-            maker.height.equalTo(140)
-        }
-        
         zrflowerView.contentView.addSubview(zrflowerControl)
         zrflowerControl.snp.makeConstraints { $0.edges.equalToSuperview() }
         addSubview(zrflowerView)
         zrflowerView.snp.makeConstraints { (maker) in
             maker.left.equalTo(20)
             maker.right.equalTo(-20)
-            maker.top.equalTo(manobooView.snp.bottom).offset(40)
+            maker.bottom.equalTo(-20)
+            maker.height.equalTo(140)
+        }
+        
+        manobooView.contentView.addSubview(manobooControl)
+        manobooControl.snp.makeConstraints { $0.edges.equalToSuperview() }
+        addSubview(manobooView)
+        manobooView.snp.makeConstraints { (maker) in
+            maker.left.equalTo(20)
+            maker.right.equalTo(-20)
+            maker.bottom.equalTo(zrflowerView.snp.top).offset(-20)
             maker.height.equalTo(140)
         }
         
