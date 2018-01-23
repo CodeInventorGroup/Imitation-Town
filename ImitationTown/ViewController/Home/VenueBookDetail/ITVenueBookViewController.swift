@@ -61,7 +61,6 @@ class ITVenueBookViewController: ITBaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        ITToolBar.share.hidden(true, animated: animated)
         navButton.transform = .identity
     }
 

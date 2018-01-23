@@ -13,6 +13,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITMemberViewController" customModule="ImitationTown" customModuleProvider="target">
             <connections>
+                <outlet property="avatarImgView" destination="6CX-2i-fbJ" id="ebb-Zv-ozS"/>
+                <outlet property="nameLabel" destination="qpC-uf-JMf" id="waR-R1-AjR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -54,7 +56,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="32"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
             </subviews>

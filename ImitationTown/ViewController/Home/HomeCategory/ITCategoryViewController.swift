@@ -49,7 +49,6 @@ class ITCategoryViewController: ITBaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        ITToolBar.share.hidden(true, animated: true)
         navigationController?.setNavigationBarHidden(true, animated: true)
         navBackbutton.transform = CGAffineTransform.identity
     }

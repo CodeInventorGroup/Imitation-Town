@@ -17,11 +17,23 @@ class ITMineView: UIView {
             zrflowerControl.addHandler(for: .touchUpInside) { _ in self.clickMember?(1) }
         }
     }
+
+    var isQuietMode: Bool = false {
+        didSet {
+            UIView.animate(withDuration: 0.35, animations: {
+                self.manobooView.alpha = self.isQuietMode ? 0.0 : 1.0
+                self.zrflowerView.alpha = self.isQuietMode ? 0.0 : 1.0
+            })
+        }
+    }
+
+    fileprivate let backgroundImgView = UIImageView()
+
     fileprivate let manobooControl = UIControl.init()
-    fileprivate let manobooView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .dark))
+    fileprivate let manobooView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .extraLight))
     
     fileprivate let zrflowerControl = UIControl()
-    fileprivate let zrflowerView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .dark))
+    fileprivate let zrflowerView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .extraLight))
     
     fileprivate let titleLabel = UILabel()
     
@@ -40,7 +52,16 @@ class ITMineView: UIView {
     }
     
     func buildUI() {
+        addSubview(backgroundImgView)
+        backgroundImgView.image = UIImage.gifImage(name: "Mine_background")
+        backgroundImgView.contentMode = UIViewContentMode.scaleAspectFill
+        backgroundImgView.clipsToBounds = true
+        backgroundImgView.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+        }
+
         titleLabel.font = UIFont.boldSystemFont(ofSize: 48.0)
+        titleLabel.textColor = .white
         titleLabel.text = "关于我们"
         addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (maker) in
@@ -93,13 +114,14 @@ class ITMineView: UIView {
             
             let nameLabel = UILabel()
             nameLabel.text = names[index]
-            nameLabel.textColor = .white
+            nameLabel.textColor = .gray
+            nameLabel.textAlignment = .center
             infoView.contentView.addSubview(nameLabel)
             nameLabel.font = UIFont.boldSystemFont(ofSize: 24.0)
             nameLabel.textAlignment = .center
             nameLabel.snp.makeConstraints({ (maker) in
-                maker.right.equalTo(-20)
-                maker.left.equalTo(thumbImgView.snp.right).offset(40)
+                maker.right.equalTo(0)
+                maker.left.equalTo(thumbImgView.snp.right)
                 maker.centerY.equalToSuperview()
             })
         }

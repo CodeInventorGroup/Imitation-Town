@@ -89,6 +89,9 @@
 		B02A2FCD1F5D1F8200A6F6B1 /* ITMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02A2FCB1F5D1F8200A6F6B1 /* ITMessageTableViewCell.swift */; };
 		B02A2FCE1F5D1F8200A6F6B1 /* ITMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02A2FCC1F5D1F8200A6F6B1 /* ITMessageTableViewCell.xib */; };
 		B03F8509201304C500B5D9DF /* ITMineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F8508201304C500B5D9DF /* ITMineView.swift */; };
+		B05A6D3A2017191D0094410F /* AnimatedAvatar.gif in Resources */ = {isa = PBXBuildFile; fileRef = B05A6D392017191D0094410F /* AnimatedAvatar.gif */; };
+		B05A6D3C20171BBB0094410F /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05A6D3B20171BBB0094410F /* UIImage+Gif.swift */; };
+		B05A6D3F201724A20094410F /* Mine_background.gif in Resources */ = {isa = PBXBuildFile; fileRef = B05A6D3E201724A10094410F /* Mine_background.gif */; };
 		B05AC5441F38B2AD0085D3F1 /* ITMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5431F38B2AD0085D3F1 /* ITMessageViewController.swift */; };
 		B05AC5461F38B2E90085D3F1 /* ITMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5451F38B2E90085D3F1 /* ITMineViewController.swift */; };
 		B05AC5481F38B2F60085D3F1 /* ITPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05AC5471F38B2F60085D3F1 /* ITPostViewController.swift */; };
@@ -205,6 +208,9 @@
 		B02A2FCB1F5D1F8200A6F6B1 /* ITMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITMessageTableViewCell.swift; sourceTree = "<group>"; };
 		B02A2FCC1F5D1F8200A6F6B1 /* ITMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITMessageTableViewCell.xib; sourceTree = "<group>"; };
 		B03F8508201304C500B5D9DF /* ITMineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITMineView.swift; sourceTree = "<group>"; };
+		B05A6D392017191D0094410F /* AnimatedAvatar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AnimatedAvatar.gif; sourceTree = "<group>"; };
+		B05A6D3B20171BBB0094410F /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		B05A6D3E201724A10094410F /* Mine_background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Mine_background.gif; sourceTree = "<group>"; };
 		B05AC5431F38B2AD0085D3F1 /* ITMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITMessageViewController.swift; sourceTree = "<group>"; };
 		B05AC5451F38B2E90085D3F1 /* ITMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITMineViewController.swift; sourceTree = "<group>"; };
 		B05AC5471F38B2F60085D3F1 /* ITPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITPostViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +304,7 @@
 				4655F4F81E518F0B0018ED83 /* Int+Extension.swift */,
 				46B796711E5D808800A0DCE8 /* ForchTouch+Extension.swift */,
 				1C03E6581E83728A008F89DC /* UIImage+ITExtension.swift */,
+				B05A6D3B20171BBB0094410F /* UIImage+Gif.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -375,6 +382,8 @@
 				463C27801E94B18E0025414C /* CIBlurHUDBundle */,
 				4683DF611DCC9146002F9D6C /* JSONResources */,
 				46947A551DB8755E0005BD98 /* DINPro-CondBold.otf */,
+				B05A6D3E201724A10094410F /* Mine_background.gif */,
+				B05A6D392017191D0094410F /* AnimatedAvatar.gif */,
 				1C91CC321DB615DA008E7BF0 /* Info.plist */,
 				1C944E8D1E82647F009E79E6 /* ImitationTown_Bridging_Header.h */,
 				1CE035FF1DB612DA0064F2B6 /* ImitationTown-Prefix.swift */,
@@ -776,6 +785,7 @@
 				463D1CBB1E4AF03300C9BD7D /* ITHomeCityStoryCell.xib in Resources */,
 				1C1199E01E65109E00094B75 /* ITSearchVenueBookCell.xib in Resources */,
 				462C821C1E799BB7005915EE /* ITVenueHeaderView.xib in Resources */,
+				B05A6D3F201724A20094410F /* Mine_background.gif in Resources */,
 				463D1CB71E49D07000C9BD7D /* ITHomeVenuebookCell.xib in Resources */,
 				465209681E7A8CC60077E7AE /* ITVenuebookDetailCell.xib in Resources */,
 				B0EBBDFE1FED0D3D00F1A3AE /* Launch Screen.storyboard in Resources */,
@@ -783,6 +793,7 @@
 				4635598B1E645E6900264D20 /* ITSelectCityViewController.xib in Resources */,
 				461793731E79780F001C9BAA /* ITCategoryViewController.xib in Resources */,
 				1CA3B3091E6549A6001C84CD /* ITSearchUserCell.xib in Resources */,
+				B05A6D3A2017191D0094410F /* AnimatedAvatar.gif in Resources */,
 				46DC84B41E16454C008403BB /* ITHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -895,6 +906,7 @@
 				1CE1AC711E8FA60200E8BF7B /* ITMomentStoryDetailViewController.swift in Sources */,
 				1C7728361DBDB7A4008048DC /* UILabel+ITExtension.swift in Sources */,
 				46B796841E5EC90B00A0DCE8 /* ITCategoryTableViewCell.swift in Sources */,
+				B05A6D3C20171BBB0094410F /* UIImage+Gif.swift in Sources */,
 				1C36A3F51E7BBD1E004B222B /* ITMapViewController.swift in Sources */,
 				1CA3B3081E6549A6001C84CD /* ITSearchUserCell.swift in Sources */,
 				1C25B7141E4C716000D58DF4 /* String+Extension.swift in Sources */,
